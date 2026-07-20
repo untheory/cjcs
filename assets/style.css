@@ -28,3 +28,63 @@
 .main-nav a.active {
     border-bottom: 2px solid #d4a373;
 }
+/* HARD OVERRIDE — CENTER EVERYTHING, TWO ROWS, MOBILE SAFE */
+.site-header {
+    width: 100%;
+    display: block !important;
+    text-align: center !important;
+    padding: 20px 0 !important;
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.logo,
+.centered-logo {
+    width: 100% !important;
+    display: block !important;
+}
+
+.logo img,
+.centered-logo img {
+    height: 80px !important;
+    display: block !important;
+    margin: 0 auto 20px auto !important;
+}
+
+/* NAV ROWS — FORCE CENTER */
+.main-nav,
+.centered-nav {
+    width: 100% !important;
+    display: block !important;
+    text-align: center !important;
+}
+
+.main-nav ul,
+.centered-nav ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 10px 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 24px !important;
+}
+
+.main-nav a,
+.centered-nav a {
+    color: #fff !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+.main-nav a.active,
+.centered-nav a.active {
+    border-bottom: 2px solid #d4a373 !important;
+}
+
+/* MOBILE — STACK CLEANLY */
+@media (max-width: 768px) {
+    .main-nav ul,
+    .centered-nav ul {
+        flex-direction: column !important;
+        gap: 14px !important;
+    }
+}
