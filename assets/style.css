@@ -129,8 +129,9 @@ body {
     border-radius: 8px;
 }
 
-/* CTA */
-.services-cta {
+/* CTA BUTTON */
+.services-cta,
+.un-cta {
     text-align: center;
     margin-top: 30px;
 }
@@ -151,4 +152,116 @@ body {
     padding: 18px;
     margin-top: 40px;
     font-size: 14px;
+}
+
+/* ABOUT PAGE */
+.about-page {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 20px 60px;
+}
+
+.about-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.about-list li {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* CONTACT PAGE (NB1 HERO) */
+.contact-hero {
+    background: url("NB1.png") no-repeat center center;
+    background-size: cover;
+    min-height: 50vh;
+    position: relative;
+}
+
+.contact-hero-overlay {
+    background: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    height: 100%;
+    padding: 120px 20px 80px;
+    box-sizing: border-box;
+}
+
+.contact-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.contact-hero-content p {
+    font-size: 18px;
+}
+
+.contact-details {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 20px 60px;
+}
+
+.contact-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.contact-item {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 18px;
+    border-radius: 8px;
+}
+
+/* UN THEORY PAGE */
+.un-intro {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 20px 60px;
+}
+
+.un-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.un-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.un-list li {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* UN THEORY INDEX PAGE */
+.un-index {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 20px 60px;
+}
+
+.un-index h2 {
+    margin-top: 40px;
 }
