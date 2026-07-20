@@ -9,22 +9,29 @@
 
 <body>
 
-<header class="site-header">
-    <div class="logo">
+<header class="site-header centered-header">
+
+    <div class="logo centered-logo">
         <img src="assets/RGLTB.png" alt="CJ Consultancy Services Ltd">
     </div>
 
-    <nav class="main-nav">
+    <nav class="main-nav primary-nav centered-nav">
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="un-theory.html">UN Theory</a></li>
+        </ul>
+    </nav>
+
+    <nav class="main-nav secondary-nav centered-nav">
+        <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="un-theory.html">UN Theory Overview</a></li>
             <li><a href="un-theory-index.html">UN Theory Index</a></li>
             <li><a href="sitemap.html">Sitemap</a></li>
         </ul>
     </nav>
+
 </header>
 
 <section class="hero">
@@ -98,6 +105,9 @@
 <footer class="site-footer">
     <p>© 2026 CJ Consultancy Services Ltd — Hundon, Suffolk, United Kingdom</p>
 </footer>
+
+<div class="dark-toggle-box" onclick="toggleDarkMode()">Dark Mode</div>
+<script src="assets/darkmode.js"></script>
 
 </body>
 </html>
