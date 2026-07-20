@@ -8,10 +8,10 @@ body {
     color: #fff;
 }
 
-/* MOBILE BACKGROUND */
+/* MOBILE BACKGROUND — matches your actual file FP1.PNG */
 @media (max-width: 768px) {
     body {
-        background: url("FP1.png") no-repeat center center fixed;
+        background: url("FP1.PNG") no-repeat center center fixed;
         background-size: cover;
     }
 }
@@ -178,7 +178,7 @@ body {
     border-radius: 6px;
 }
 
-/* CONTACT PAGE (NB1 HERO) */
+/* CONTACT PAGE — matches your actual NB1.png */
 .contact-hero {
     background: url("NB1.png") no-repeat center center;
     background-size: cover;
