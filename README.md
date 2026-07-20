@@ -1,50 +1,93 @@
-# CJ Consultancy Services Ltd
+CJ Consultancy Services Ltd
+Professional Mechanical & Electrical Compliance • Technical Inspection • Engineering Advisory Services
+<img src="assets/RGLTB.png" alt="CJ Consultancy Services Ltd Logo" width="200">
 
-CJ Consultancy Services Ltd provides specialist mechanical and electrical compliance, technical inspection, and advisory services. Operating from Suffolk, UK, the company delivers high‑integrity reporting, legislative alignment, and practical engineering guidance for commercial, industrial, and specialist environments.
+About Us
+CJ Consultancy Services Ltd provides specialist mechanical and electrical compliance, lifecycle analysis, asset condition reporting, and technical inspection services across commercial, industrial, and specialist environments.
 
-This repository contains the source files for the CJCS public website, hosted via GitHub Pages and served at **cjcs.co.uk**.
+Our mission is simple:
 
-## About the Managing Director
+Your Vision, Our Expertise.
 
-**Clint Jefferys**  
-Managing Director, CJ Consultancy Services Ltd  
-Independent theoretical physics researcher  
-Mechanical & electrical legislation and compliance consultant  
-Based in Hundon, Sudbury, Suffolk, United Kingdom
+Core Services
+Asset Condition Reporting
 
-Clint brings **over thirty years of professional experience** in mechanical and electrical compliance, technical inspection, regulatory interpretation, and high‑integrity reporting across commercial, industrial, and specialist engineering environments.
+Mechanical & Electrical Compliance
 
-## Featured Services
+Lifecycle Analysis & Cost Forecasting
 
-- **[Asset Condition Reporting](ca://s?q=Explain_Asset_Condition_Reporting)**  
-- **[Asset Verification](ca://s?q=Explain_Asset_Verification)**  
-- **[Mechanical and Electrical Compliance](ca://s?q=Explain_Mechanical_and_Electrical_Compliance)**  
-- **[Life Cycle Analysis](ca://s?q=Explain_Life_Cycle_Analysis)**  
-- **[Life Cycle Costing](ca://s?q=Explain_Life_Cycle_Costing)**  
-- **[Business Focused Maintenance Reporting](ca://s?q=Explain_Business_Focused_Maintenance_Reporting)**  
-- **[Business Focused Maintenance Scheduling](ca://s?q=Explain_Business_Focused_Maintenance_Scheduling)**  
-- **[Condition Based Maintenance Reporting](ca://s?q=Explain_Condition_Based_Maintenance_Reporting)**  
-- **[Condition Based Maintenance Scheduling](ca://s?q=Explain_Condition_Based_Maintenance_Scheduling)**  
-- **[Maintenance Gap Analysis Reporting](ca://s?q=Explain_Maintenance_Gap_Analysis)**  
-- **[Functional Design Verification](ca://s?q=Explain_Functional_Design_Verification)**  
-- **[Design Specifications](ca://s?q=Explain_Design_Specifications)**  
-- **[Obsolescence Specifications](ca://s?q=Explain_Obsolescence_Specifications)**  
-- **[PPM Planners](ca://s?q=Explain_PPM_Planners)**  
-- **[Log Books](ca://s?q=Explain_Log_Books)**  
-- **[Auditing](ca://s?q=Explain_Auditing)**  
-- **[Technical Services](ca://s?q=Explain_Technical_Services)**  
+Business‑Focused Maintenance Scheduling
 
-## Website Structure
+Technical Inspection & Verification
 
-- `index.html` — main public homepage  
-- `/assets` — static resources (images, CSS, documents)  
-- Additional pages added as required  
+Independent Engineering Advisory Services
 
-## Hosting
+Website
+Our full website is available at:
 
-This site is deployed using GitHub Pages and mapped to the custom domain **cjcs.co.uk** via external DNS.
+https://cjcs.co.uk
 
-## Contact
+It includes:
 
-For enquiries, please use the contact details provided on the website.
+Home
 
+Services
+
+About
+
+Contact
+
+UN Theory Overview
+
+UN Theory Full Index
+
+Sitemap
+
+UN Theory — The Unified Information Substrate
+This repository also hosts the public index and overview for UN Theory, an independent theoretical physics framework authored by Clint Jefferys.
+
+UN Theory covers:
+
+δI‑Substrate Microstructure
+
+Emergent Geometry
+
+Parity‑Odd Trispectrum
+
+Quantum Behaviour
+
+Cosmological Dynamics
+
+Planetary‑Scale δI Compression
+
+Ultra‑Global Fixed Point
+
+Terminal State Architecture
+
+UN Theory Pages
+UN Theory Overview
+
+UN Theory Full Index
+
+Links to all sector papers, volumes, prediction papers, and mathematical closure documents
+
+External Research Archive
+Full UN Theory research is available at:
+
+https://untheory.github.io/UN-Theory/
+
+Zenodo Community:
+
+https://zenodo.org/communities/un-theory
+
+Contact
+CJ Consultancy Services Ltd
+Hundon, Sudbury, Suffolk
+United Kingdom
+
+Email: info@cjcs.co.uk  
+Phone: +44 (0) 1234 567890
+
+Copyright
+© 2026 CJ Consultancy Services Ltd
+© 2026 UN Theory — The Unified Information Substrate
