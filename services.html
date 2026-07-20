@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>CJ Consultancy Services Ltd — Services</title>
+    <link rel="canonical" href="https://cjcs.co.uk/services.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="https://cjcs.co.uk/assets/Rose%20Gold%20Logo%20With%20Transparent%20Background.png">
+    <link rel="apple-touch-icon" href="https://cjcs.co.uk/assets/Rose%20Gold%20Logo%20With%20Transparent%20Background.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Performance -->
+    <link rel="preload" href="https://cjcs.co.uk/assets/Your%20Vision%20City%20Scape%20RA.png" as="image">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="CJ Consultancy Services Ltd — Services">
+    <meta property="og:description" content="Detailed overview of mechanical & electrical compliance, technical inspection, and advisory services offered by CJ Consultancy Services Ltd.">
+    <meta property="og:url" content="https://cjcs.co.uk/services.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cjcs.co.uk/assets/Your%20Vision%20City%20Scape%20RA.png">
+    <meta property="og:image:alt" content="CJ Consultancy Services Ltd — Your Vision, Our Expertise">
+    <meta property="og:site_name" content="CJ Consultancy Services Ltd">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CJ Consultancy Services Ltd — Services">
+    <meta name="twitter:description" content="Detailed overview of mechanical & electrical compliance, technical inspection, and advisory services offered by CJ Consultancy Services Ltd.">
+    <meta name="twitter:image" content="https://cjcs.co.uk/assets/Your%20Vision%20City%20Scape%20RA.png">
+    <meta name="twitter:image:alt" content="CJ Consultancy Services Ltd — Your Vision, Our Expertise">
+
+    <!-- SEO -->
+    <meta name="description" content="Detailed overview of mechanical and electrical compliance, technical inspection, asset reporting, maintenance scheduling, and advisory services provided by CJ Consultancy Services Ltd.">
+    <meta name="keywords" content="mechanical compliance services, electrical compliance services, technical inspection services, engineering advisory services, asset reporting, maintenance planning, UK engineering consultancy, Clint Jefferys services">
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cjcs.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://cjcs.co.uk/services.html"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Styles (same shell as index) -->
+    <style>
+        :root {
+            --bg: #111;
+            --text: #eee;
+            --accent: #f2c9a0;
+            --hero-text: white;
+            --card-bg: #1a1a1a;
+        }
+
+        body.light {
+            --bg: #fdfdfd;
+            --text: #222;
+            --accent: #b06f3c;
+            --hero-text: #222;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin:0;
+            font-family: Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .skip-link {
+            position:absolute;
+            top:-40px;
+            left:0;
+            background:#000;
+            color:#fff;
+            padding:8px;
+            z-index:100;
+        }
+        .skip-link:focus {
+            top:0;
+        }
+
+        header {
+            position: sticky;
+            top:0;
+            z-index:150;
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(6px);
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:10px 20px;
+        }
+
+        header img {
+            max-width:160px;
+        }
+
+        .header-left {
+            display:flex;
+            align-items:center;
+            gap:10px;
+        }
+
+        nav {
+            display:flex;
+            gap:15px;
+            align-items:center;
+        }
+
+        nav a {
+            color: var(--accent);
+            text-decoration:none;
+            font-size:14px;
+            font-weight:bold;
+        }
+
+        nav a:hover {
+            text-decoration:underline;
+        }
+
+        .header-actions {
+            display:flex;
+            gap:10px;
+            align-items:center;
+        }
+
+        #themeToggle {
+            padding:8px 14px;
+            background: var(--accent);
+            color:#000;
+            border:none;
+            border-radius:6px;
+            cursor:pointer;
+            font-weight:bold;
+        }
+
+        .contact-btn {
+            padding:8px 14px;
+            background:#000;
+            color:var(--accent);
+            border:1px solid var(--accent);
+            border-radius:6px;
+            cursor:pointer;
+            font-weight:bold;
+        }
+
+        .contact-btn:hover {
+            background:var(--accent);
+            color:#000;
+        }
+
+        .menu-toggle {
+            display:none;
+            padding:8px 12px;
+            background:#000;
+            color:var(--accent);
+            border:1px solid var(--accent);
+            border-radius:6px;
+            cursor:pointer;
+            font-weight:bold;
+        }
+
+        .mobile-nav {
+            display:none;
+            flex-direction:column;
+            gap:8px;
+            padding:10px 20px;
+            background:rgba(0,0,0,0.9);
+        }
+
+        .mobile-nav a {
+            color: var(--accent);
+            text-decoration:none;
+            font-size:14px;
+            font-weight:bold;
+        }
+
+        .hero {
+            background:url('assets/Your Vision City Scape RA.png') center/cover no-repeat;
+            min-height:220px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            padding:30px 20px;
+            opacity:0;
+            transform:translateY(20px);
+            animation: heroFadeIn 0.8s ease-out forwards;
+        }
+
+        @keyframes heroFadeIn {
+            to {
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        .hero-overlay {
+            background:rgba(0,0,0,0.55);
+            padding:20px;
+            border-radius:10px;
+        }
+
+        .hero h1 {
+            font-size:30px;
+            color: var(--hero-text);
+            margin:0 0 10px 0;
+        }
+
+        .hero p {
+            margin:0;
+            font-size:15px;
+        }
+
+        main {
+            max-width:1000px;
+            margin:0 auto;
+            padding:30px 20px 40px 20px;
+        }
+
+        .section {
+            margin-bottom:40px;
+        }
+
+        h2 {
+            color: var(--accent);
+            margin-bottom:10px;
+        }
+
+        h3 {
+            color: var(--accent);
+            margin-top:20px;
+            margin-bottom:8px;
+        }
+
+        p {
+            line-height:1.7;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius:10px;
+            padding:20px;
+            margin-top:10px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+            border:1px solid transparent;
+        }
+
+        .card:hover {
+            transform:translateY(-4px);
+            box-shadow:0 8px 20px rgba(0,0,0,0.5);
+            border:1px solid var(--accent);
+        }
+
+        ul {
+            line-height:1.8;
+            padding-left:20px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration:none;
+        }
+
+        a:hover {
+            text-decoration:underline;
+        }
+
+        footer {
+            text-align:center;
+            padding:20px;
+            color:#aaa;
+            font-size:14px;
+            border-top:1px solid #333;
+        }
+
+        .footer-links {
+            margin-bottom:10px;
+        }
+
+        .footer-links a {
+            margin:0 8px;
+            font-size:13px;
+        }
+
+        .floating-contact {
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            z-index:200;
+        }
+
+        .floating-contact button {
+            padding:10px 16px;
+            background:var(--accent);
+            color:#000;
+            border:none;
+            border-radius:999px;
+            cursor:pointer;
+            font-weight:bold;
+            box-shadow:0 6px 16px rgba(0,0,0,0.6);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display:none;
+            }
+            .menu-toggle {
+                display:block;
+            }
+            header img {
+                max-width:130px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                flex-direction:column;
+                gap:10px;
+                align-items:flex-start;
+            }
+            .header-actions {
+                width:100%;
+                justify-content:flex-start;
+                flex-wrap:wrap;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="header-left">
+            <img src="assets/Rose Gold Logo With Transparent Background.png" alt="CJ Consultancy Services Ltd Logo">
+            <button class="menu-toggle" id="menuToggle">Menu</button>
+        </div>
+        <nav id="desktopNav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+        </nav>
+        <div class="header-actions">
+            <button id="themeToggle">Light Mode</button>
+            <a href="mailto:clint@cjcs.co.uk" class="contact-btn">Email Clint</a>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+    </div>
+
+    <div class="hero">
+        <div class="hero-overlay">
+            <h1>Detailed Services Overview</h1>
+            <p>Structured, high‑integrity engineering and compliance support across mechanical and electrical domains.</p>
+        </div>
+    </div>
+
+    <main id="main">
+        <section class="section">
+            <h2>Mechanical Compliance & Inspection</h2>
+            <div class="card">
+                <p>
+                    Mechanical compliance services focus on asset integrity, risk‑based inspection planning, and alignment with
+                    relevant legislation and standards. Typical engagements include:
+                </p>
+                <ul>
+                    <li>Plant and equipment condition assessments</li>
+                    <li>Risk‑based inspection schedules and prioritisation</li>
+                    <li>Defect identification, classification, and remedial guidance</li>
+                    <li>Life‑cycle and replacement profiling for critical assets</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Electrical Compliance & Technical Reporting</h2>
+            <div class="card">
+                <p>
+                    Electrical compliance services provide structured reporting, defect classification, and practical remedial
+                    strategies. Typical engagements include:
+                </p>
+                <ul>
+                    <li>Compliance inspections and structured defect registers</li>
+                    <li>Review of third‑party test results and reporting quality</li>
+                    <li>Remedial prioritisation and implementation guidance</li>
+                    <li>Integration of electrical findings into wider asset strategies</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Asset Reporting, Maintenance & Advisory</h2>
+            <div class="card">
+                <p>
+                    Asset reporting and advisory services are built for decision‑makers who need clarity, not noise. Typical
+                    engagements include:
+                </p>
+                <ul>
+                    <li>Asset condition reporting with clear, actionable grading</li>
+                    <li>Maintenance scheduling and optimisation recommendations</li>
+                    <li>Independent review of existing reports and maintenance plans</li>
+                    <li>Technical advisory support for complex or specialist environments</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Engagement Model</h2>
+            <div class="card">
+                <p>
+                    Engagements are scoped with clear deliverables, reporting standards, and alignment to relevant legislation and
+                    best‑practice guidance. Each project is structured to:
+                </p>
+                <ul>
+                    <li>Define scope, assets, and reporting expectations upfront</li>
+                    <li>Provide structured, legible outputs for decision‑makers</li>
+                    <li>Integrate findings into practical, implementable strategies</li>
+                    <li>Maintain traceability and auditability of recommendations</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a> |
+            <a href="services.html">Services</a> |
+            <a href="mailto:clint@cjcs.co.uk">Email</a>
+        </div>
+        © 2026 CJ Consultancy Services Ltd — All Rights Reserved
+    </footer>
+
+    <div class="floating-contact">
+        <button onclick="window.location.href='mailto:clint@cjcs.co.uk'">Contact Clint</button>
+    </div>
+
+    <script>
+        const btn = document.getElementById('themeToggle');
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light');
+            btn.textContent = 'Dark Mode';
+        }
+
+        btn.addEventListener('click', () => {
+            document.body.classList.toggle('light');
+            const isLight = document.body.classList.contains('light');
+            btn.textContent = isLight ? 'Dark Mode' : 'Light Mode';
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        });
+
+        menuToggle.addEventListener('click', () => {
+            const isVisible = mobileNav.style.display === 'flex';
+            mobileNav.style.display = isVisible ? 'none' : 'flex';
+        });
+    </script>
+
+</body>
+</html>
