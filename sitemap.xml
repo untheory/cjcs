@@ -13,4 +13,28 @@
         <priority>0.8</priority>
     </url>
 
+    <url>
+        <loc>https://cjcs.co.uk/about.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://cjcs.co.uk/contact.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://cjcs.co.uk/un-theory.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://cjcs.co.uk/un-theory-index.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
 </urlset>
