@@ -1,43 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <title>CJ Consultancy Services Ltd</title>
+    <link rel="canonical" href="https://cjcs.co.uk/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-        body { margin:0; font-family: Arial, sans-serif; background:#111; color:#eee; }
-        header { text-align:center; padding:40px 20px; }
-        header img { max-width:220px; }
-        .hero {
-            background:url('assets/Your Vision City Scape RA.png') center/cover no-repeat;
-            height:420px;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            text-align:center;
-        }
-        .hero h1 {
-            font-size:48px;
-            color:white;
-            text-shadow:0 0 12px black;
-            margin:0;
-        }
-        .section { padding:40px 20px; max-width:900px; margin:auto; }
-        h2 { color:#f2c9a0; margin-bottom:10px; }
-        h3 { color:#f2c9a0; margin-top:30px; }
-        ul { line-height:1.8; }
-        a { color:#f2c9a0; text-decoration:none; }
-        a:hover { text-decoration:underline; }
-        footer {
-            text-align:center;
-            padding:20px;
-            color:#aaa;
-            font-size:14px;
-        }
-    </style>
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="https://cjcs.co.uk/assets/Rose%20Gold%20Logo%20With%20Transparent%20Background.png">
+    <link rel="apple-touch-icon" href="https://cjcs.co.uk/assets/Rose%20Gold%20Logo%20With%20Transparent%20Background.png">
+    <link rel="manifest" href="/manifest.json">
 
-    <!-- PERSON -->
+    <!-- Performance -->
+    <link rel="preload" href="https://cjcs.co.uk/assets/Your%20Vision%20City%20Scape%20RA.png" as="image">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="CJ Consultancy Services Ltd">
+    <meta property="og:description" content="Specialist mechanical & electrical compliance, technical inspection, and advisory services. High‑integrity reporting and engineering guidance across commercial, industrial, and specialist environments.">
+    <meta property="og:url" content="https://cjcs.co.uk/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cjcs.co.uk/assets/Your%20Vision%20City%20Scape%20RA.png">
+    <meta property="og:image:alt" content="CJ Consultancy Services Ltd — Your Vision, Our Expertise">
+    <meta property="og:site_name" content="CJ Consultancy Services Ltd">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CJ Consultancy Services Ltd">
+    <meta name="twitter:description" content="Specialist mechanical & electrical compliance, technical inspection, and advisory services. High‑integrity reporting and engineering guidance across commercial, industrial, and specialist environments.">
+    <meta name="twitter:image" content="https://cjcs.co.uk/assets/Your%20Vision%20City%20Scape%20RA.png">
+    <meta name="twitter:image:alt" content="CJ Consultancy Services Ltd — Your Vision, Our Expertise">
+
+    <!-- SEO -->
+    <meta name="description" content="CJ Consultancy Services Ltd provides specialist mechanical and electrical compliance, technical inspection, and advisory services. Based in Suffolk, UK, delivering high‑integrity reporting, legislative alignment, and practical engineering guidance for commercial, industrial, and specialist environments.">
+    <meta name="keywords" content="mechanical compliance, electrical compliance, technical inspection, engineering advisory, asset condition reporting, maintenance scheduling, life cycle analysis, Suffolk engineering consultancy, UK compliance consultant, Clint Jefferys">
+
+    <!-- ContactPoint Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CJ Consultancy Services Ltd",
+      "url": "https://cjcs.co.uk",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "clint@cjcs.co.uk",
+        "contactType": "customer service",
+        "areaServed": "GB",
+        "availableLanguage": "English"
+      }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cjcs.co.uk/"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Person Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -58,7 +89,7 @@
     }
     </script>
 
-    <!-- ORGANIZATION -->
+    <!-- Organization Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -75,157 +106,424 @@
     }
     </script>
 
-    <!-- WEBSITE -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "CJ Consultancy Services Ltd",
-      "url": "https://cjcs.co.uk",
-      "publisher": {
-        "@type": "Organization",
-        "name": "CJ Consultancy Services Ltd"
-      }
-    }
-    </script>
+    <!-- Styles -->
+    <style>
+        :root {
+            --bg: #111;
+            --text: #eee;
+            --accent: #f2c9a0;
+            --hero-text: white;
+            --card-bg: #1a1a1a;
+        }
 
-    <!-- UN THEORY -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CreativeWorkSeries",
-      "name": "UN Theory — The Unified Information Substrate",
-      "alternateName": "UN Theory",
-      "description": "A unified theoretical framework describing emergent geometry, correlation structure, quantum behaviour, cosmological dynamics, and the full forced-emergence chain of physical law.",
-      "url": "https://untheory.github.io/UN-Theory/",
-      "creator": {
-        "@type": "Person",
-        "name": "Clint Jefferys",
-        "sameAs": [
-          "https://orcid.org/0009-0007-XXXX-XXXX",
-          "https://zenodo.org/communities/un-theory/",
-          "https://www.linkedin.com/in/clint-jefferys/"
-        ]
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "UN Theory Research Group"
-      },
-      "sameAs": [
-        "https://untheory.github.io/UN-Theory/",
-        "https://zenodo.org/communities/un-theory/"
-      ]
-    }
-    </script>
+        body.light {
+            --bg: #fdfdfd;
+            --text: #222;
+            --accent: #b06f3c;
+            --hero-text: #222;
+            --card-bg: #ffffff;
+        }
 
-    <!-- SECTOR PAPERS I–XV + V-A -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        { "@type": "ScholarlyArticle", "name": "Sector Paper I — δI‑Substrate Microstructure, Emergent Geometry, and Primitive Parity‑Odd Invariants", "author": { "@type": "Person", "name": "Clint Jefferys" }, "url": "https://untheory.github.io/UN-Theory/Sector-Paper-I", "isPartOf": { "@type": "CreativeWorkSeries", "name": "UN Theory — The Unified Information Substrate" } },
+        * {
+            box-sizing: border-box;
+        }
 
-        { "@type": "ScholarlyArticle", "name": "Sector Paper II — The Global Δi Architecture and Observational Calibration of the Parity‑Odd Trispectrum", "author": { "@type": "Person", "name": "Clint Jefferys" }, "url": "https://untheory.github.io/UN-Theory/Sector-Paper-II", "isPartOf": { "@type": "CreativeWorkSeries", "name": "UN Theory — The Unified Information Substrate" } },
+        body {
+            margin:0;
+            font-family: Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
 
-        { "@type": "ScholarlyArticle", "name": "Sector Paper III — Global Invariance of the Parity‑Odd δI Trispectrum and Universal Spectral Closure", "author": { "@type": "Person", "name": "Clint Jefferys" }, "url": "https://untheory.github.io/UN-Theory/Sector-Paper-III", "isPartOf": { "@type": "CreativeWorkSeries", "name": "UN Theory — The Unified Information Substrate" } },
+        /* Skip link accessibility */
+        .skip-link {
+            position:absolute;
+            top:-40px;
+            left:0;
+            background:#000;
+            color:#fff;
+            padding:8px;
+            z-index:100;
+        }
+        .skip-link:focus {
+            top:0;
+        }
 
-        { "@type": "ScholarlyArticle", "name": "Sector Paper IV — Quantum δI‑Microstructure and Forced‑Emergence of Quantum Behaviour", "author": { "@type": "Person", "name": "Clint Jefferys" }, "url": "https://untheory.github.io/UN-Theory/Sector-Paper-IV", "isPartOf": { "@type": "CreativeWorkSeries", "name": "UN Theory — The Unified Information Substrate" } },
+        /* Layout */
+        header {
+            position: sticky;
+            top:0;
+            z-index:150;
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(6px);
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:10px 20px;
+        }
 
-        { "@type": "ScholarlyArticle", "name": "Sector Paper V — The Completed Standard Model Bosonic Sector", "author": { "@type": "Person", "name": "Clint Jefferys" }, "url": "https://untheory.github.io/UN-Theory/Sector-Paper-V", "isPartOf": { "@type": "CreativeWorkSeries", "name": "UN Theory — The Unified Information Substrate" } },
+        header img {
+            max-width:160px;
+        }
 
-        { "@type": "ScholarlyArticle", "name": "Sector Paper V‑A — The Completed Bosonic Sector: Full Detection & Measurement Framework with Python Analysis Pipeline", "author": { "@type": "Person", "name": "Clint Jefferys" }, "url": "https://untheory.github.io/UN-Theory/Sector-Paper-V-A", "isPartOf": { "@type": "CreativeWorkSeries", "name": "UN Theory — The Unified Information Substrate" } },
+        .header-left {
+            display:flex;
+            align-items:center;
+            gap:10px;
+        }
 
-        { "@type": "ScholarlyArticle", "name": "Sector Paper VI — Prediction of Ultra‑Low‑Density Planets and Forced 5:3 Resonance in the TOI‑791 System", "author": { "@type": "Person", "name": "Clint Jefferys" }, "url": "https://untheory.github.io/UN-Theory/Sector-Paper-VI", "isPartOf": { "@type": "CreativeWorkSeries", "name": "UN Theory — The Unified Information Substrate" } },
+        nav {
+            display:flex;
+            gap:15px;
+            align-items:center;
+        }
 
-        { "@type": "ScholarlyArticle", "name": "Sector Paper VII — Forced‑Emergence of Outer‑Shell Sparse‑Regime Dynamics in Uranus", "author": { "@type": "Person", "name": "Clint Jefferys" }, "url": "https://untheory.github.io/UN-Theory/Sector-Paper-VII", "isPartOf": { "@type": "CreativeWorkSeries", "name": "UN Theory — The Unified Information Substrate" } },
+        nav a {
+            color: var(--accent);
+            text-decoration:none;
+            font-size:14px;
+            font-weight:bold;
+        }
 
-        { "@type": "ScholarlyArticle", "name": "Sector Paper VIII — Ultra‑Global Fixed Point and Terminal Correlation Geometry", "author": { "@type": "Person", "name": "Clint Jefferys" }, "url": "https://untheory.github.io/UN-Theory/Sector-Paper-VIII", "isPartOf": { "@type": "CreativeWorkSeries", "name": "UN Theory — The Unified Information Substrate" } },
+        nav a:hover {
+            text-decoration:underline;
+        }
 
-        { "@type": "ScholarlyArticle", "name": "Sector Paper IX — Terminal State and Return to I(x, x′)", "author": { "@type": "Person", "name": "Clint Jefferys" }, "url": "https://untheory.github.io/UN-Theory/Sector-Paper-IX", "isPartOf": { "@type": "CreativeWorkSeries", "name": "UN Theory — The Unified Information Substrate" } },
+        .header-actions {
+            display:flex;
+            gap:10px;
+            align-items:center;
+        }
 
-        { "@type": "ScholarlyArticle", "name": "Sector Paper X — δI‑Driven Expansion History, Visible Epoch Age, Total Substrate Age, and Exterior δI‑Geometry Embedding", "author": { "@type": "Person", "name": "Clint Jefferys" }, "url": "https://untheory.github.io/UN-Theory/Sector-Paper-X", "isPartOf": { "@type": "CreativeWorkSeries", "name": "UN Theory — The Unified Information Substrate" } },
+        #themeToggle {
+            padding:8px 14px;
+            background: var(--accent);
+            color:#000;
+            border:none;
+            border-radius:6px;
+            cursor:pointer;
+            font-weight:bold;
+        }
 
-        { "@type": "ScholarlyArticle", "name": "Sector Paper XI — UN Theory vs Euclid: Maximal Test of Early‑Epoch AGN and Quasars", "author": { "@type": "Person", "name": "Clint Jefferys" }, "url": "https://untheory.github.io/UN-Theory/Sector-Paper-XI", "isPartOf": { "@type": "CreativeWorkSeries", "name": "UN Theory — The Unified Information Substrate" } },
+        .contact-btn {
+            padding:8px 14px;
+            background:#000;
+            color:var(--accent);
+            border:1px solid var(--accent);
+            border-radius:6px;
+            cursor:pointer;
+            font-weight:bold;
+        }
 
-        { "@type": "ScholarlyArticle", "name": "Sector Paper XII — Planetary‑Scale δI‑Compression, Seismic Phase‑Domain Structure, and Deep‑Earth Correlation Geometry", "author": { "@type": "Person", "name": "Clint Jefferys" }, "url": "https://untheory.github.io/UN-Theory/Sector-Paper-XII", "isPartOf": { "@type": "CreativeWorkSeries", "name": "UN Theory — The Unified Information Substrate" } },
+        .contact-btn:hover {
+            background:var(--accent);
+            color:#000;
+        }
 
-        { "@type": "ScholarlyArticle", "name": "Sector Paper XIII — The Primitive Correlation Object, Ultra‑Maximal Prohibitions, and Full Parity‑Odd Closure", "author": { "@type": "Person", "name": "Clint Jefferys" }, "url": "https://untheory.github.io/UN-Theory/Sector-Paper-XIII", "isPartOf": { "@type": "CreativeWorkSeries", "name": "UN Theory — The Unified Information Substrate" } },
+        /* Mobile menu */
+        .menu-toggle {
+            display:none;
+            padding:8px 12px;
+            background:#000;
+            color:var(--accent);
+            border:1px solid var(--accent);
+            border-radius:6px;
+            cursor:pointer;
+            font-weight:bold;
+        }
 
-        { "@type": "ScholarlyArticle", "name": "Sector Paper XIV — The Tri‑Peak Correlation Object and the Dissolution of the Classical Three‑Body Problem", "author": { "@type": "Person", "name": "Clint Jefferys" }, "url": "https://untheory.github.io/UN-Theory/Sector-Paper-XIV", "isPartOf": { "@type": "CreativeWorkSeries", "name": "UN Theory — The Unified Information Substrate" } },
+        .mobile-nav {
+            display:none;
+            flex-direction:column;
+            gap:8px;
+            padding:10px 20px;
+            background:rgba(0,0,0,0.9);
+        }
 
-        { "@type": "ScholarlyArticle", "name": "Sector Paper XV — The Unified Theory of Everything", "author": { "@type": "Person", "name": "Clint Jefferys" }, "url": "https://untheory.github.io/UN-Theory/Sector-Paper-XV", "isPartOf": { "@type": "CreativeWorkSeries", "name": "UN Theory — The Unified Information Substrate" } }
-      ]
-    }
-    </script>
+        .mobile-nav a {
+            color: var(--accent);
+            text-decoration:none;
+            font-size:14px;
+            font-weight:bold;
+        }
+
+        .hero {
+            background:url('assets/Your Vision City Scape RA.png') center/cover no-repeat;
+            min-height:280px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            padding:40px 20px;
+            opacity:0;
+            transform:translateY(20px);
+            animation: heroFadeIn 0.8s ease-out forwards;
+        }
+
+        @keyframes heroFadeIn {
+            to {
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        .hero-overlay {
+            background:rgba(0,0,0,0.55);
+            padding:20px;
+            border-radius:10px;
+        }
+
+        .hero h1 {
+            font-size:34px;
+            color: var(--hero-text);
+            margin:0 0 10px 0;
+        }
+
+        .hero p {
+            margin:0;
+            font-size:16px;
+        }
+
+        main {
+            max-width:1000px;
+            margin:0 auto;
+            padding:30px 20px 40px 20px;
+        }
+
+        .section {
+            margin-bottom:40px;
+        }
+
+        h2 {
+            color: var(--accent);
+            margin-bottom:10px;
+        }
+
+        h3 {
+            color: var(--accent);
+            margin-top:20px;
+            margin-bottom:8px;
+        }
+
+        p {
+            line-height:1.7;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius:10px;
+            padding:20px;
+            margin-top:10px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+            border:1px solid transparent;
+        }
+
+        .card:hover {
+            transform:translateY(-4px);
+            box-shadow:0 8px 20px rgba(0,0,0,0.5);
+            border:1px solid var(--accent);
+        }
+
+        ul {
+            line-height:1.8;
+            padding-left:20px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration:none;
+        }
+
+        a:hover {
+            text-decoration:underline;
+        }
+
+        footer {
+            text-align:center;
+            padding:20px;
+            color:#aaa;
+            font-size:14px;
+            border-top:1px solid #333;
+        }
+
+        .footer-links {
+            margin-bottom:10px;
+        }
+
+        .footer-links a {
+            margin:0 8px;
+            font-size:13px;
+        }
+
+        /* Floating contact widget */
+        .floating-contact {
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            z-index:200;
+        }
+
+        .floating-contact button {
+            padding:10px 16px;
+            background:var(--accent);
+            color:#000;
+            border:none;
+            border-radius:999px;
+            cursor:pointer;
+            font-weight:bold;
+            box-shadow:0 6px 16px rgba(0,0,0,0.6);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                display:none;
+            }
+            .menu-toggle {
+                display:block;
+            }
+            header img {
+                max-width:130px;
+            }
+            .hero {
+                min-height:220px;
+            }
+            .hero h1 {
+                font-size:26px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                flex-direction:column;
+                gap:10px;
+                align-items:flex-start;
+            }
+            .header-actions {
+                width:100%;
+                justify-content:flex-start;
+                flex-wrap:wrap;
+            }
+        }
+    </style>
 
 </head>
 
 <body>
 
-<header>
-    <img src="assets/Rose Gold Logo With Transparent Background.png" alt="CJ Consultancy Services Ltd Logo">
-</header>
+    <!-- Accessibility Skip Link -->
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-<div class="hero">
-    <h1>Your Vision, Our Expertise</h1>
-</div>
+    <header>
+        <div class="header-left">
+            <img src="assets/Rose Gold Logo With Transparent Background.png" alt="CJ Consultancy Services Ltd Logo">
+            <button class="menu-toggle" id="menuToggle">Menu</button>
+        </div>
+        <nav id="desktopNav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+        </nav>
+        <div class="header-actions">
+            <button id="themeToggle">Light Mode</button>
+            <a href="mailto:clint@cjcs.co.uk" class="contact-btn">Email Clint</a>
+        </div>
+    </header>
 
-<div class="section">
-    <h2>About CJ Consultancy Services Ltd</h2>
-    <p>
-        CJ Consultancy Services Ltd provides specialist mechanical and electrical compliance, 
-        technical inspection, and advisory services. Based in Suffolk, UK, we deliver high‑integrity 
-        reporting, legislative alignment, and practical engineering guidance across commercial, 
-        industrial, and specialist environments.
-    </p>
-    <p>
-        Managing Director <strong>Clint Jefferys</strong> brings over thirty years of professional 
-        experience in compliance, inspection, regulatory interpretation, and technical documentation.
-    </p>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+    </div>
 
-    <h3>Professional Profiles</h3>
-    <p>
-        <a href="https://untheory.github.io/UN-Theory/">UN Theory — Unified Information Substrate</a><br>
-        <a href="https://orcid.org/0009-0007-XXXX-XXXX">ORCID Profile</a><br>
-        <a href="https://zenodo.org/communities/un-theory/">Zenodo Community</a><br>
-        <a href="https://www.linkedin.com/in/clint-jefferys/">LinkedIn — Clint Jefferys</a>
-    </p>
-</div>
+    <div class="hero">
+        <div class="hero-overlay">
+            <h1>Your Vision, Our Expertise</h1>
+            <p>High‑integrity mechanical & electrical compliance, technical inspection, and advisory services.</p>
+        </div>
+    </div>
 
-<div class="section">
-    <h2>Featured Services</h2>
-    <ul>
-        <li>Asset Condition Reporting</li>
-        <li>Asset Verification</li>
-        <li>Mechanical and Electrical Compliance</li>
-        <li>Life Cycle Analysis</li>
-        <li>Life Cycle Costing</li>
-        <li>Business Focused Maintenance Reporting</li>
-        <li>Business Focused Maintenance Scheduling</li>
-        <li>Condition Based Maintenance Reporting</li>
-        <li>Condition Based Maintenance Scheduling</li>
-        <li>Maintenance Gap Analysis Reporting</li>
-        <li>Functional Design Verification</li>
-        <li>Design Specifications</li>
-        <li>Obsolescence Specifications</li>
-        <li>PPM Planners</li>
-        <li>Log Books</li>
-        <li>Auditing</li>
-        <li>Technical Services</li>
-    </ul>
-</div>
+    <main id="main">
+        <section class="section">
+            <h2>Specialist Engineering & Compliance Services</h2>
+            <div class="card">
+                <p>
+                    CJ Consultancy Services Ltd provides professional mechanical and electrical compliance, technical inspection,
+                    and advisory services across commercial, industrial, and specialist environments. Every report is built for
+                    legislative alignment, practical engineering decisions, and long‑term asset integrity.
+                </p>
+            </div>
+        </section>
 
-<div class="section">
-    <h2>Contact</h2>
-    <p>
-        For enquiries, please contact CJ Consultancy Services Ltd using the details provided 
-        on your preferred communication channel.
-    </p>
-</div>
+        <section class="section">
+            <h3>Core Services</h3>
+            <div class="card">
+                <ul>
+                    <li>Mechanical compliance assessments and risk‑based inspection planning</li>
+                    <li>Electrical compliance inspections and defect classification</li>
+                    <li>Asset condition reporting and life‑cycle profiling</li>
+                    <li>Maintenance scheduling and optimisation guidance</li>
+                    <li>Technical advisory services for complex or specialist environments</li>
+                    <li>Independent review of third‑party reports and remedial strategies</li>
+                </ul>
+            </div>
+        </section>
 
-<footer>
-    © 2026 CJ Consultancy Services Ltd — All Rights Reserved
-</footer>
+        <section class="section">
+            <h3>Contact & Engagement</h3>
+            <div class="card">
+                <p>
+                    For project enquiries, technical discussions, or formal reporting requirements, please contact:
+                </p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:clint@cjcs.co.uk">clint@cjcs.co.uk</a><br>
+                    <strong>Location:</strong> Suffolk, United Kingdom<br>
+                </p>
+                <p>
+                    Engagements are scoped with clear deliverables, reporting standards, and alignment to relevant legislation and
+                    best‑practice guidance.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a> |
+            <a href="services.html">Services</a> |
+            <a href="mailto:clint@cjcs.co.uk">Email</a>
+        </div>
+        © 2026 CJ Consultancy Services Ltd — All Rights Reserved
+    </footer>
+
+    <!-- Floating Contact Widget -->
+    <div class="floating-contact">
+        <button onclick="window.location.href='mailto:clint@cjcs.co.uk'">Contact Clint</button>
+    </div>
+
+    <!-- Theme Toggle + Mobile Menu Script -->
+    <script>
+        const btn = document.getElementById('themeToggle');
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+
+        // Load saved theme
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light');
+            btn.textContent = 'Dark Mode';
+        }
+
+        btn.addEventListener('click', () => {
+            document.body.classList.toggle('light');
+            const isLight = document.body.classList.contains('light');
+            btn.textContent = isLight ? 'Dark Mode' : 'Light Mode';
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        });
+
+        menuToggle.addEventListener('click', () => {
+            const isVisible = mobileNav.style.display === 'flex';
+            mobileNav.style.display = isVisible ? 'none' : 'flex';
+        });
+    </script>
 
 </body>
 </html>
