@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://untheory.github.io/cjcs/sitemap.xml
+Sitemap: https://cjcs.co.uk/sitemap.xml
