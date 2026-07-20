@@ -82,8 +82,7 @@
       },
       "sameAs": [
         "https://untheory.github.io/UN-Theory/",
-        "https://orcid.org/0009-0007-XXXX-XXXX",
-        "https://zenodo.org/communities/un-theory/",
+        "https://zenodo.org/communities/un-theory",
         "https://www.linkedin.com/in/clint-jefferys/"
       ]
     }
@@ -96,11 +95,10 @@
       "@type": "Organization",
       "name": "CJ Consultancy Services Ltd",
       "url": "https://cjcs.co.uk",
-      "logo": "https://untheory.github.io/cjcs/assets/Rose Gold Logo With Transparent Background.png",
+      "logo": "https://cjcs.co.uk/assets/Rose%20Gold%20Logo%20With%20Transparent%20Background.png",
       "sameAs": [
         "https://untheory.github.io/UN-Theory/",
-        "https://orcid.org/0009-0007-XXXX-XXXX",
-        "https://zenodo.org/communities/un-theory/",
+        "https://zenodo.org/communities/un-theory",
         "https://www.linkedin.com/in/clint-jefferys/"
       ]
     }
@@ -136,7 +134,6 @@
             transition: background 0.3s ease, color 0.3s ease;
         }
 
-        /* Skip link accessibility */
         .skip-link {
             position:absolute;
             top:-40px;
@@ -150,7 +147,6 @@
             top:0;
         }
 
-        /* Layout */
         header {
             position: sticky;
             top:0;
@@ -221,7 +217,6 @@
             color:#000;
         }
 
-        /* Mobile menu */
         .menu-toggle {
             display:none;
             padding:8px 12px;
@@ -356,7 +351,6 @@
             font-size:13px;
         }
 
-        /* Floating contact widget */
         .floating-contact {
             position:fixed;
             bottom:20px;
@@ -375,7 +369,6 @@
             box-shadow:0 6px 16px rgba(0,0,0,0.6);
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             nav {
                 display:none;
@@ -412,7 +405,6 @@
 
 <body>
 
-    <!-- Accessibility Skip Link -->
     <a href="#main" class="skip-link">Skip to main content</a>
 
     <header>
@@ -495,18 +487,15 @@
         © 2026 CJ Consultancy Services Ltd — All Rights Reserved
     </footer>
 
-    <!-- Floating Contact Widget -->
     <div class="floating-contact">
         <button onclick="window.location.href='mailto:clint@cjcs.co.uk'">Contact Clint</button>
     </div>
 
-    <!-- Theme Toggle + Mobile Menu Script -->
     <script>
         const btn = document.getElementById('themeToggle');
         const menuToggle = document.getElementById('menuToggle');
         const mobileNav = document.getElementById('mobileNav');
 
-        // Load saved theme
         if (localStorage.getItem('theme') === 'light') {
             document.body.classList.add('light');
             btn.textContent = 'Dark Mode';
