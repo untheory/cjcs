@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>UN Theory — Technical Overview</title>
+    <link rel="canonical" href="https://cjcs.co.uk/un-theory.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="https://cjcs.co.uk/assets/Rose%20Gold%20Logo%20With%20Transparent%20Background.png">
+    <link rel="apple-touch-icon" href="https://cjcs.co.uk/assets/Rose%20Gold%20Logo%20With%20Transparent%20Background.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="UN Theory — Technical Overview">
+    <meta property="og:description" content="A technical overview of UN Theory — The Unified Information Substrate, including δI‑substrate, forced‑emergence chain, parity‑odd trispectrum, quantum microstructure, and cosmological dynamics.">
+    <meta property="og:url" content="https://cjcs.co.uk/un-theory.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cjcs.co.uk/assets/Your%20Vision%20City%20Scape%20RA.png">
+    <meta property="og:image:alt" content="UN Theory — The Unified Information Substrate">
+    <meta property="og:site_name" content="CJ Consultancy Services Ltd">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UN Theory — Technical Overview">
+    <meta name="twitter:description" content="A technical overview of UN Theory — The Unified Information Substrate, including δI‑substrate, forced‑emergence chain, parity‑odd trispectrum, quantum microstructure, and cosmological dynamics.">
+    <meta name="twitter:image" content="https://cjcs.co.uk/assets/Your%20Vision%20City%20Scape%20RA.png">
+    <meta name="twitter:image:alt" content="UN Theory — The Unified Information Substrate">
+
+    <!-- SEO -->
+    <meta name="description" content="Technical overview of UN Theory — The Unified Information Substrate, authored by Clint Jefferys. Includes δI‑substrate, emergence chain, trispectrum, quantum microstructure, bosonic sector, and cosmology.">
+    <meta name="keywords" content="UN Theory, Unified Information Substrate, δI substrate, Δi architecture, parity odd trispectrum, quantum microstructure, cosmology, Clint Jefferys">
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cjcs.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "UN Theory",
+          "item": "https://cjcs.co.uk/un-theory.html"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Styles -->
+    <style>
+        :root {
+            --bg: #111;
+            --text: #eee;
+            --accent: #f2c9a0;
+            --hero-text: white;
+            --card-bg: #1a1a1a;
+        }
+
+        body.light {
+            --bg: #fdfdfd;
+            --text: #222;
+            --accent: #b06f3c;
+            --hero-text: #222;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin:0;
+            font-family: Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .skip-link {
+            position:absolute;
+            top:-40px;
+            left:0;
+            background:#000;
+            color:#fff;
+            padding:8px;
+            z-index:100;
+        }
+        .skip-link:focus {
+            top:0;
+        }
+
+        header {
+            position: sticky;
+            top:0;
+            z-index:150;
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(6px);
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:10px 20px;
+        }
+
+        header img {
+            max-width:160px;
+        }
+
+        .header-left {
+            display:flex;
+            align-items:center;
+            gap:10px;
+        }
+
+        nav {
+            display:flex;
+            gap:15px;
+            align-items:center;
+        }
+
+        nav a {
+            color: var(--accent);
+            text-decoration:none;
+            font-size:14px;
+            font-weight:bold;
+        }
+
+        nav a:hover {
+            text-decoration:underline;
+        }
+
+        .header-actions {
+            display:flex;
+            gap:10px;
+            align-items:center;
+        }
+
+        #themeToggle {
+            padding:8px 14px;
+            background: var(--accent);
+            color:#000;
+            border:none;
+            border-radius:6px;
+            cursor:pointer;
+            font-weight:bold;
+        }
+
+        .contact-btn {
+            padding:8px 14px;
+            background:#000;
+            color:var(--accent);
+            border:1px solid var(--accent);
+            border-radius:6px;
+            cursor:pointer;
+            font-weight:bold;
+        }
+
+        .contact-btn:hover {
+            background:var(--accent);
+            color:#000;
+        }
+
+        .menu-toggle {
+            display:none;
+            padding:8px 12px;
+            background:#000;
+            color:var(--accent);
+            border:1px solid var(--accent);
+            border-radius:6px;
+            cursor:pointer;
+            font-weight:bold;
+        }
+
+        .mobile-nav {
+            display:none;
+            flex-direction:column;
+            gap:8px;
+            padding:10px 20px;
+            background:rgba(0,0,0,0.9);
+        }
+
+        .mobile-nav a {
+            color: var(--accent);
+            text-decoration:none;
+            font-size:14px;
+            font-weight:bold;
+        }
+
+        .hero {
+            background:url('assets/Your Vision City Scape RA.png') center/cover no-repeat;
+            min-height:220px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            padding:30px 20px;
+            opacity:0;
+            transform:translateY(20px);
+            animation: heroFadeIn 0.8s ease-out forwards;
+        }
+
+        @keyframes heroFadeIn {
+            to {
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        .hero-overlay {
+            background:rgba(0,0,0,0.55);
+            padding:20px;
+            border-radius:10px;
+        }
+
+        .hero h1 {
+            font-size:30px;
+            color: var(--hero-text);
+            margin:0 0 10px 0;
+        }
+
+        .hero p {
+            margin:0;
+            font-size:15px;
+        }
+
+        main {
+            max-width:1000px;
+            margin:0 auto;
+            padding:30px 20px 40px 20px;
+        }
+
+        .section {
+            margin-bottom:40px;
+        }
+
+        h2 {
+            color: var(--accent);
+            margin-bottom:10px;
+        }
+
+        h3 {
+            color: var(--accent);
+            margin-top:20px;
+            margin-bottom:8px;
+        }
+
+        p {
+            line-height:1.7;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius:10px;
+            padding:20px;
+            margin-top:10px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+            border:1px solid transparent;
+        }
+
+        .card:hover {
+            transform:translateY(-4px);
+            box-shadow:0 8px 20px rgba(0,0,0,0.5);
+            border:1px solid var(--accent);
+        }
+
+        ul {
+            line-height:1.8;
+            padding-left:20px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration:none;
+        }
+
+        a:hover {
+            text-decoration:underline;
+        }
+
+        footer {
+            text-align:center;
+            padding:20px;
+            color:#aaa;
+            font-size:14px;
+            border-top:1px solid #333;
+        }
+
+        .footer-links {
+            margin-bottom:10px;
+        }
+
+        .footer-links a {
+            margin:0 8px;
+            font-size:13px;
+        }
+
+        .floating-contact {
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            z-index:200;
+        }
+
+        .floating-contact button {
+            padding:10px 16px;
+            background:var(--accent);
+            color:#000;
+            border:none;
+            border-radius:999px;
+            cursor:pointer;
+            font-weight:bold;
+            box-shadow:0 6px 16px rgba(0,0,0,0.6);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display:none;
+            }
+            .menu-toggle {
+                display:block;
+            }
+            header img {
+                max-width:130px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                flex-direction:column;
+                gap:10px;
+                align-items:flex-start;
+            }
+            .header-actions {
+                width:100%;
+                justify-content:flex-start;
+                flex-wrap:wrap;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="header-left">
+            <img src="assets/Rose Gold Logo With Transparent Background.png" alt="CJ Consultancy Services Ltd Logo">
+            <button class="menu-toggle" id="menuToggle">Menu</button>
+        </div>
+        <nav id="desktopNav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="un-theory.html">UN Theory</a>
+        </nav>
+        <div class="header-actions">
+            <button id="themeToggle">Light Mode</button>
+            <a href="mailto:clint@cjcs.co.uk" class="contact-btn">Email Clint</a>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="un-theory.html">UN Theory</a>
+    </div>
+
+    <div class="hero">
+        <div class="hero-overlay">
+            <h1>UN Theory — Technical Overview</h1>
+            <p>A complete technical description of The Unified Information Substrate.</p>
+        </div>
+    </div>
+
+    <main id="main">
+
+        <section class="section">
+            <h2>The Unified Information Substrate</h2>
+            <div class="card">
+                <p>
+                    <strong>UN Theory — The Unified Information Substrate</strong> is a closed theoretical framework in which all
+                    physical behaviour emerges from a single primitive correlation object: the <strong>δI‑substrate</strong>.
+                    Geometry, dynamics, quantum behaviour, bosonic sector structure, and cosmology arise through a strict,
+                    non‑optional forced‑emergence chain.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>δI‑Substrate</h2>
+            <div class="card">
+                <p>
+                    The δI‑substrate is the primitive correlation object underlying all physical structure. It defines:
+                </p>
+                <ul>
+                    <li>local correlation geometry</li>
+                    <li>global Δi‑architecture behaviour</li>
+                    <li>parity‑odd invariants</li>
+                    <li>substrate‑driven spectral closure</li>
+                </ul>
+                <p>
+                    All higher‑order physics is forced by δI behaviour — nothing is optional.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Forced‑Emergence Chain</h2>
+            <div class="card">
+                <p>
+                    UN Theory derives physics through a strict emergence chain:
+                </p>
+                <ul>
+                    <li>δI‑substrate → primitive geometry</li>
+                    <li>primitive geometry → global Δi‑architecture</li>
+                    <li>global Δi‑architecture → quantum microstructure</li>
+                    <li>quantum microstructure → bosonic sector</li>
+                    <li>bosonic sector → cosmological dynamics</li>
+                </ul>
+                <p>
+                    Each layer is mathematically forced by the previous one.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Parity‑Odd Trispectrum</h2>
+            <div class="card">
+                <p>
+                    A central prediction of UN Theory is the <strong>global parity‑odd trispectrum</strong>, a universal observable
+                    across CMB, LSS, shear, bispectrum, and 3PCF channels.
+                </p>
+                <p>
+                    The universal closure form is:
+                </p>
+                <p>
+                    <em>O<sub>P,C</sub><sup>odd</sup>(k) = A<sub>P,C</sub> ε<sub>abc</sub> k<sub>a</sub> k<sub>b</sub> k<sub>c</sub></em>
+                </p>
+                <p>
+                    This expression is invariant across probes and channels.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Quantum Microstructure</h2>
+            <div class="card">
+                <p>
+                    Quantum behaviour emerges directly from δI‑microstructure without external quantisation rules. The theory
+                    derives:
+                </p>
+                <ul>
+                    <li>substrate‑driven amplitude structure</li>
+                    <li>forced‑emergent uncertainty relations</li>
+                    <li>quantum spectral closure</li>
+                    <li>δI‑phase behaviour</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Completed Bosonic Sector</h2>
+            <div class="card">
+                <p>
+                    UN Theory predicts a completed Standard Model bosonic sector consisting of:
+                </p>
+                <ul>
+                    <li>thirteen missing bosons</li>
+                    <li>four bosonic families</li>
+                    <li>substrate‑defined coupling structure</li>
+                    <li>detector‑grade signatures</li>
+                </ul>
+                <p>
+                    Sector Paper V and V‑A provide the full detection and measurement framework.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Cosmological Dynamics</h2>
+            <div class="card">
+                <p>
+                    The cosmological domain includes:
+                </p>
+                <ul>
+                    <li>δI‑driven expansion history</li>
+                    <li>visible epoch age</li>
+                    <li>total substrate age</li>
+                    <li>exterior δI‑geometry embedding</li>
+                </ul>
+                <p>
+                    Sector Paper X + X‑A provides the full cosmological closure.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Research Identity</h2>
+            <div class="card">
+                <ul>
+                    <li><a href="https://zenodo.org/communities/un-theory">UN Theory Zenodo Community</a></li>
+                    <li><a href="https://orcid.org/0009-0007-8611-7101">ORCID: 0009‑0007‑8611‑7101</a></li>
+                    <li><a href="https://untheory.github.io/UN-Theory/">UN Theory Website</a></li>
+                    <li><a href="un-theory-index.html">UN Theory Publication Index</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a> |
+            <a href="services.html">Services</a> |
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="un-theory.html">UN Theory</a> |
+            <a href="mailto:clint@cjcs.co.uk">Email</a>
+        </div>
+        © 2026 CJ Consultancy Services Ltd — All Rights Reserved
+    </footer>
+
+    <div class="floating-contact">
+        <button onclick="window.location.href='mailto:clint@cjcs.co.uk'">Contact Clint</button>
+    </div>
+
+    <script>
+        const btn = document.getElementById('themeToggle');
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light');
+            btn.textContent = 'Dark Mode';
+        }
+
+        btn.addEventListener('click', () => {
+            document.body.classList.toggle('light');
+            const isLight = document.body.classList.contains('light');
+            btn.textContent = isLight ? 'Dark Mode' : 'Light Mode';
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
