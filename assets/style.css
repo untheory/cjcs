@@ -265,3 +265,31 @@ body {
 .un-index h2 {
     margin-top: 40px;
 }
+/* DARK MODE TOGGLE */
+.dark-mode {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.dark-mode .site-header,
+.dark-mode .intro,
+.dark-mode .services-preview,
+.dark-mode .about-page,
+.dark-mode .contact-details,
+.dark-mode .un-intro,
+.dark-mode .un-index {
+    background: rgba(0, 0, 0, 0.9) !important;
+}
+
+.dark-toggle-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #d4a373;
+    color: #000;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 9999;
+}
