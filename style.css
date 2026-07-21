@@ -1,0 +1,76 @@
+/* GLOBAL */
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* PAGE BACKGROUNDS */
+body.homepage {
+    background: url("assets/FW1.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.services {
+    background: url("assets/RGLTB.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.about {
+    background: url("assets/FW1.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.contact {
+    background: url("assets/NB1.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.untheory {
+    background: url("assets/FP1.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* HEADER */
+.site-header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.logo img {
+    height: 80px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* NAVIGATION */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav a.active {
+    border-bottom: 2px solid #d4a373;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        gap: 14px;
+    }
+}
