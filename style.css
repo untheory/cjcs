@@ -6,8 +6,6 @@ html, body {
     color: #fff;
     font-family: Arial, sans-serif;
 }
-
-/* PAGE BACKGROUNDS — USING YOUR REAL FILENAMES */
 body.homepage {
     background: url("assets/FW1.png") no-repeat center center fixed;
     background-size: cover;
@@ -32,6 +30,7 @@ body.untheory {
     background: url("assets/FP1.PNG") no-repeat center center fixed;
     background-size: cover;
 }
+
 
 /* HEADER */
 .site-header {
