@@ -7,7 +7,7 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-/* PAGE BACKGROUNDS */
+/* PAGE BACKGROUNDS — USING YOUR REAL FILENAMES */
 body.homepage {
     background: url("assets/FW1.png") no-repeat center center fixed;
     background-size: cover;
@@ -29,7 +29,7 @@ body.contact {
 }
 
 body.untheory {
-    background: url("assets/FP1.png") no-repeat center center fixed;
+    background: url("assets/FP1.PNG") no-repeat center center fixed;
     background-size: cover;
 }
 
