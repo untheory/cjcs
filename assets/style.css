@@ -31,14 +31,14 @@ body.services {
 /* HEADER */
 .site-header {
     width: 100%;
-    display: block !important;
-    text-align: center !important;
-    padding: 20px 0 !important;
-    background: rgba(0, 0, 0, 0.7) !important;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .logo img {
-    height: 80px !important;
+    height: 80px;
     display: block;
     margin: 0 auto 20px auto;
 }
