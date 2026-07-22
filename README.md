@@ -1,93 +1,113 @@
-CJ Consultancy Services Ltd
-Professional Mechanical & Electrical Compliance • Technical Inspection • Engineering Advisory Services
+<img src="assets/banner.png" alt="CJ Consultancy Services Ltd Banner" width="100%">
+
+# CJ Consultancy Services Ltd
+### Professional Mechanical & Electrical Compliance • Technical Inspection • Engineering Advisory Services • Asset Verification & Condition Reporting
+
 <img src="assets/RGLTB.png" alt="CJ Consultancy Services Ltd Logo" width="200">
 
-About Us
+## About Us
 CJ Consultancy Services Ltd provides specialist mechanical and electrical compliance, lifecycle analysis, asset condition reporting, and technical inspection services across commercial, industrial, and specialist environments.
 
-Our mission is simple:
+**Your Vision, Our Expertise.**
 
-Your Vision, Our Expertise.
+## Featured Services
+• Asset Condition Reporting
 
-Core Services
-Asset Condition Reporting
+• Asset Verification 
 
-Mechanical & Electrical Compliance
+• Mechanical and Electrical Compliance 
 
-Lifecycle Analysis & Cost Forecasting
+• Life Cycle Analysis
 
-Business‑Focused Maintenance Scheduling
+• Life Cycle Costing 
 
-Technical Inspection & Verification
+• Business Focused Maintenance Reporting 
 
-Independent Engineering Advisory Services
+• Business Focused Maintenance Scheduling 
 
-Website
-Our full website is available at:
+• Condition Based Maintenance Reporting 
 
-https://cjcs.co.uk
+• Condition Based Maintenance Scheduling 
 
-It includes:
+• Maintenance Gap Analysis Reporting 
 
-Home
+• Functional Design Verification 
 
-Services
+• Design Specifications 
 
-About
+• Obsolescence Specifications
 
-Contact
+• PPM Planners
 
-UN Theory Overview
+• Log Books 
 
-UN Theory Full Index
+• Auditing 
 
-Sitemap
+• Technical Services  
 
-UN Theory — The Unified Information Substrate
-This repository also hosts the public index and overview for UN Theory, an independent theoretical physics framework authored by Clint Jefferys.
+## Website
+Full website: **https://cjcs.co.uk**
 
-UN Theory covers:
+Includes:  
+Home • Services • About • Contact • UN Theory Overview • UN Theory Full Index • Sitemap
 
-δI‑Substrate Microstructure
+---
 
-Emergent Geometry
+# UN Theory — The Unified Information Substrate
+This repository also hosts the public index and overview for **UN Theory**, an independent theoretical physics framework authored by Clint Jefferys.
 
-Parity‑Odd Trispectrum
+## UN Theory covers:
+• δI‑Substrate Microstructure
+The primitive correlation‑structure of reality from which all physical behaviour emerges.
 
-Quantum Behaviour
+• Emergent Geometry
+Spacetime curvature and geodesics arise directly from δI gradients.
 
-Cosmological Dynamics
+• Parity‑Odd Trispectrum
+A universal invariant appearing across cosmology, lensing, shear, and correlation statistics.
 
-Planetary‑Scale δI Compression
+• Quantum Behaviour
+Quantum mechanics emerges from canonical δI evolution and correlation structure.
 
-Ultra‑Global Fixed Point
+• Cosmological Dynamics
+Expansion history, vacuum closure, and early‑epoch AGN/quasar formation.
 
-Terminal State Architecture
+• Planetary‑Scale δI Compression
+Seismic behaviour, mantle structure, and sparse‑regime planetary dynamics.
 
-UN Theory Pages
-UN Theory Overview
+• Ultra‑Global Fixed Point
+The asymptotic correlation geometry governing late‑epoch behaviour.
 
-UN Theory Full Index
+• Terminal State Architecture
+The final collapse of all emergence back to the primitive correlation object.
 
+• Full Structural Unification
+Derivation of GR, QFT, Standard Model, tensor sectors, cosmology, and quantum behaviour from a single substrate.
+
+
+## UN Theory Pages
+UN Theory Overview  
+UN Theory Full Index  
 Links to all sector papers, volumes, prediction papers, and mathematical closure documents
 
-External Research Archive
-Full UN Theory research is available at:
-
+## External Research Archive
+Full UN Theory research:  
 https://untheory.github.io/UN-Theory/
 
-Zenodo Community:
-
+Zenodo Community:  
 https://zenodo.org/communities/un-theory
 
-Contact
-CJ Consultancy Services Ltd
-Hundon, Sudbury, Suffolk
-United Kingdom
+---
 
-Email: info@cjcs.co.uk  
-Phone: +44 (0) 1234 567890
+## Contact
+CJ Consultancy Services Ltd  
+Suffolk  
+United Kingdom  
 
-Copyright
-© 2026 CJ Consultancy Services Ltd
+Email: **info@cjcs.co.uk**
+
+---
+
+## Copyright
+© 2026 CJ Consultancy Services Ltd  
 © 2026 UN Theory — The Unified Information Substrate
