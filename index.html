@@ -1,69 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CJ Consultancy Services Ltd</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>CJ Consultancy Services Ltd</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="logo-band">
-        <img src="RGLTB.png" alt="CJ Consultancy Services Ltd Logo">
-    </div>
+<div class="logo-band">
+<img src="RGLTB.png" alt="CJ Consultancy Services Ltd Logo">
+</div>
 
-    <nav class="main-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="un-theory.html">UN Theory</a></li>
-            <li><a href="un-theory-index.html">UN Theory Index</a></li>
-        </ul>
-    </nav>
+<nav class="main-nav">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="un-theory.html">UN Theory</a></li>
+<li><a href="un-theory-index.html">UN Theory Index</a></li>
+</ul>
+</nav>
 
-    <main>
-        <h1>CJ Consultancy Services Ltd</h1>
-        <p>Professional Mechanical & Electrical Compliance</p>
-        <p>Technical Inspection • Engineering Advisory Services</p>
-        <p>Asset Verification & Condition Reporting</p>
+<main>
+<h1>CJ Consultancy Services Ltd</h1>
+<p>Professional Mechanical & Electrical Compliance</p>
+<p>Technical Inspection • Engineering Advisory Services</p>
+<p>Asset Verification & Condition Reporting</p>
 
-        <h2>About Us</h2>
-        <p>CJ Consultancy Services Ltd provides specialist mechanical and electrical compliance, lifecycle analysis, asset condition reporting, and technical inspection services across commercial, industrial, and specialist environments.</p>
+<h2>About Us</h2>
+<p>CJ Consultancy Services Ltd provides specialist mechanical and electrical compliance, lifecycle analysis, asset condition reporting, and technical inspection services across commercial, industrial, and specialist environments.</p>
 
-        <p>Your Vision, Our Expertise.</p>
+<p>Your Vision, Our Expertise.</p>
 
-        <h2>Featured Services</h2>
-        <ul>
-            <li>Asset Condition Reporting</li>
-            <li>Asset Verification</li>
-            <li>Mechanical & Electrical Compliance</li>
-            <li>Life Cycle Analysis</li>
-            <li>Life Cycle Costing</li>
-            <li>Business Focused Maintenance Reporting</li>
-            <li>Business Focused Maintenance Scheduling</li>
-            <li>Condition Based Maintenance Reporting</li>
-            <li>Condition Based Maintenance Scheduling</li>
-            <li>Maintenance Gap Analysis Reporting</li>
-            <li>Functional Design Verification</li>
-            <li>Design Specifications</li>
-            <li>Obsolescence Specifications</li>
-            <li>PPM Planners</li>
-            <li>Log Books</li>
-            <li>Auditing</li>
-            <li>Technical Services</li>
-        </ul>
+<h2>Featured Services</h2>
+<ul>
+<li>Asset Condition Reporting</li>
+<li>Asset Verification</li>
+<li>Mechanical & Electrical Compliance</li>
+<li>Life Cycle Analysis</li>
+<li>Life Cycle Costing</li>
+<li>Business Focused Maintenance Reporting</li>
+<li>Business Focused Maintenance Scheduling</li>
+<li>Condition Based Maintenance Reporting</li>
+<li>Condition Based Maintenance Scheduling</li>
+<li>Maintenance Gap Analysis Reporting</li>
+<li>Functional Design Verification</li>
+<li>Design Specifications</li>
+<li>Obsolescence Specifications</li>
+<li>PPM Planners</li>
+<li>Log Books</li>
+<li>Auditing</li>
+<li>Technical Services</li>
+</ul>
 
-        <h2>UN Theory — The Unified Information Substrate</h2>
-        <p>This website also provides access to the public index and overview for UN Theory, an independent theoretical physics framework authored by Clint Jefferys.</p>
+<h2>UN Theory — The Unified Information Substrate</h2>
+<p>This website also provides access to the public index and overview for UN Theory, an independent theoretical physics framework authored by Clint Jefferys.</p>
 
-        <p>Explore the UN Theory Overview and Full Index using the navigation above.</p>
-    </main>
+<p>Explore the UN Theory Overview and Full Index using the navigation above.</p>
+</main>
 
-    <footer class="site-footer">
-        © 2026 CJ Consultancy Services Ltd — All Rights Reserved
-    </footer>
+<footer class="site-footer">
+© 2026 CJ Consultancy Services Ltd — All Rights Reserved
+</footer>
 
 </body>
 </html>
+
+STYLE.CSS
+
+html, body {
+margin: 0;
+padding: 0;
+background: #f2f2f2;
+color: #000;
+font-family: Arial, sans-serif;
+}
+
+/* LOGO BAND */
+.logo-band {
+background: #1a1a1a;
+border: 4px solid #111;
+padding: 20px 0;
+}
+
+/* LOGO IMAGE */
+.logo-band img {
+max-height: 180px;
+width: auto;
+display: block;
+margin: 0 auto;
+}
+
+/* NAVIGATION BAR */
+.main-nav {
+width: 100%;
+background: rgba(0, 0, 0, 0.85);
+text-align: center;
+padding: 12px 0;
+}
+
+.main-nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+gap: 28px;
+}
+
+.main-nav a {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+padding: 8px 14px;
+}
+
+.main-nav a:hover {
+text-decoration: underline;
+}
+
+/* MAIN CONTENT /
+main {
+max-width: 900px;
+margin: 30px auto 80px auto; / extra bottom space so content doesn't sit under footer */
+padding: 0 20px;
+}
+
+/* FOOTER – SAME COLOUR AS NAV, FIXED TO BOTTOM */
+.site-footer {
+text-align: center;
+padding: 20px;
+background: rgba(0, 0, 0, 0.85);
+color: #fff;
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+}
