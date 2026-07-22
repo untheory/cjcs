@@ -1,93 +1,132 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    background: #f2f2f2;
-    color: #000;
-    font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJ Consultancy Services Ltd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-/* HEADER */
-.site-header {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    background: rgba(0, 0, 0, 0.7);
-}
+<body>
 
-.logo img {
-    height: 80px;
-    display: block;
-    margin: 20px auto;
-}
+<!-- HEADER / LOGO BANNER -->
+<div class="site-header">
+    <div class="logo">
+        <img src="assets/RGLTB.png" alt="CJ Consultancy Services Ltd Logo">
+    </div>
+</div>
 
-/* NAVIGATION */
-.main-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 20px 0;
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-}
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="services.html">Services</a> |
+    <a href="about.html">About</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="un-theory.html">UN Theory Overview</a> |
+    <a href="un-theory-index.html">UN Theory Full Index</a> |
+    <a href="sitemap.html">Sitemap</a>
+</nav>
+<hr>
 
-.main-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
+<!-- MAIN CONTENT -->
+<h1>CJ Consultancy Services Ltd</h1>
+<h3>Professional Mechanical & Electrical Compliance • Technical Inspection • Engineering Advisory Services • Asset Verification & Condition Reporting</h3>
 
-.main-nav a.active {
-    border-bottom: 2px solid #d4a373;
-}
+<h2>About Us</h2>
+<p>
+CJ Consultancy Services Ltd provides specialist mechanical and electrical compliance, 
+lifecycle analysis, asset condition reporting, and technical inspection services across 
+commercial, industrial, and specialist environments.
+</p>
 
-/* CONTENT */
-main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-}
+<p><strong>Your Vision, Our Expertise.</strong></p>
 
-/* LISTS */
-.un-list {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 20px;
-}
+<h2>Featured Services</h2>
+<ul>
+    <li>Asset Condition Reporting</li>
+    <li>Asset Verification</li>
+    <li>Mechanical and Electrical Compliance</li>
+    <li>Life Cycle Analysis</li>
+    <li>Life Cycle Costing</li>
+    <li>Business Focused Maintenance Reporting</li>
+    <li>Business Focused Maintenance Scheduling</li>
+    <li>Condition Based Maintenance Reporting</li>
+    <li>Condition Based Maintenance Scheduling</li>
+    <li>Maintenance Gap Analysis Reporting</li>
+    <li>Functional Design Verification</li>
+    <li>Design Specifications</li>
+    <li>Obsolescence Specifications</li>
+    <li>PPM Planners</li>
+    <li>Log Books</li>
+    <li>Auditing</li>
+    <li>Technical Services</li>
+</ul>
 
-.un-list li {
-    margin-bottom: 8px;
-}
+<h2>Website</h2>
+<p>Full website: <strong>https://cjcs.co.uk</strong></p>
 
-/* FOOTER */
-.site-footer {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-}
+<p>
+Includes:<br>
+Home • Services • About • Contact • UN Theory Overview • UN Theory Full Index • Sitemap
+</p>
 
-/* MOBILE */
-@media (max-width: 768px) {
-    .main-nav ul {
-        flex-direction: column;
-        gap: 14px;
-    }
-}
+<hr>
 
-/* FIXED NAVIGATION FOR YOUR SITE */
-nav {
-    width: 100%;
-    text-align: center;
-    margin: 20px 0;
-}
+<h1>UN Theory — The Unified Information Substrate</h1>
+<p>
+This repository also hosts the public index and overview for <strong>UN Theory</strong>, 
+an independent theoretical physics framework authored by Clint Jefferys.
+</p>
 
-nav a {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 12px;
-}
+<h2>UN Theory covers:</h2>
 
-nav a:hover {
-    text-decoration: underline;
-}
+<ul>
+    <li><strong>δI‑Substrate Microstructure</strong><br>The primitive correlation‑structure of reality from which all physical behaviour emerges.</li>
+    <li><strong>Emergent Geometry</strong><br>Spacetime curvature and geodesics arise directly from δI gradients.</li>
+    <li><strong>Parity‑Odd Trispectrum</strong><br>A universal invariant appearing across cosmology, lensing, shear, and correlation statistics.</li>
+    <li><strong>Quantum Behaviour</strong><br>Quantum mechanics emerges from canonical δI evolution and correlation structure.</li>
+    <li><strong>Cosmological Dynamics</strong><br>Expansion history, vacuum closure, and early‑epoch AGN/quasar formation.</li>
+    <li><strong>Planetary‑Scale δI Compression</strong><br>Seismic behaviour, mantle structure, and sparse‑regime planetary dynamics.</li>
+    <li><strong>Ultra‑Global Fixed Point</strong><br>The asymptotic correlation geometry governing late‑epoch behaviour.</li>
+    <li><strong>Terminal State Architecture</strong><br>The final collapse of all emergence back to the primitive correlation object.</li>
+    <li><strong>Full Structural Unification</strong><br>Derivation of GR, QFT, Standard Model, tensor sectors, cosmology, and quantum behaviour from a single substrate.</li>
+</ul>
+
+<h2>UN Theory Pages</h2>
+<p>
+UN Theory Overview<br>
+UN Theory Full Index<br>
+Links to all sector papers, volumes, prediction papers, and mathematical closure documents
+</p>
+
+<h2>External Research Archive</h2>
+<p>
+Full UN Theory research:<br>
+<a href="https://untheory.github.io/UN-Theory/">https://untheory.github.io/UN-Theory/</a>
+</p>
+
+<p>
+Zenodo Community:<br>
+<a href="https://zenodo.org/communities/un-theory">https://zenodo.org/communities/un-theory</a>
+</p>
+
+<hr>
+
+<h2>Contact</h2>
+<p>
+CJ Consultancy Services Ltd<br>
+Suffolk<br>
+United Kingdom<br><br>
+Email: <strong>info@cjcs.co.uk</strong>
+</p>
+
+<hr>
+
+<h2>Copyright</h2>
+<p>
+© 2026 CJ Consultancy Services Ltd<br>
+© 2026 UN Theory — The Unified Information Substrate
+</p>
+
+</body>
+</html>
