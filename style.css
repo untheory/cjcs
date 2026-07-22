@@ -6,11 +6,10 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-.logo-band img {
-    width: auto;
-    height: 80px;
-    display: block;
-    margin: 0 auto;
+@media (max-width: 768px) {
+    .logo-band img {
+        height: 140px;
+    }
 }
 
 /* NAVIGATION BAR */
