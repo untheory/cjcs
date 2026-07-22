@@ -6,14 +6,6 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-/* LIGHT GREY LOGO BAND */
-.logo-band {
-    width: 100%;
-    background: #3a3a3a    /* lighter grey */
-    text-align: center;
-    padding: 20px 0;
-}
-
 .logo-band img {
     height: 80px;
     display: block;
