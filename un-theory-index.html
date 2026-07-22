@@ -16,6 +16,7 @@
         margin-top: 20px;
         display: flex;
         gap: 10px;
+        flex-wrap: wrap;
     }
     .button-row a, .button-row button {
         background:#333;
@@ -26,6 +27,9 @@
         border-radius:6px;
         font-weight:bold;
         cursor:pointer;
+    }
+    #openZenodo {
+        background:#0066cc;
     }
     .option-public {
         color:#0a0;
@@ -88,12 +92,12 @@ copyright in the United Kingdom and the United States of America.</p>
 
 <h2>Search the UN Theory Corpus</h2>
 
-<input type="text" id="searchBox" class="search-box" placeholder="Search documents...">
+<input type="text" id="searchBox" class="search-box" placeholder="DOI link appears here when selected…">
 
-<select id="documentList" class="dropdown-box" size="12"></select>
+<select id="documentList" class="dropdown-box" size="14"></select>
 
 <div class="button-row">
-    <a id="openDocument" href="#" target="_blank">Open Selected Document</a>
+    <a id="openZenodo" href="#" target="_blank">Open on Zenodo</a>
     <button id="copyDOI">Copy DOI</button>
     <button id="copyCitation">Copy Full Citation</button>
 </div>
@@ -103,13 +107,13 @@ copyright in the United Kingdom and the United States of America.</p>
 </div>
 
 <script>
-// --- UN THEORY CORPUS (PUBLIC + RESTRICTED) ---
+// --- PUBLIC DOCUMENTS ---
 const publicDocs = [
-    { title: "Emergent Geometry, Dynamics, and Quantum Structure from Correlation", doi: "10.5281/zenodo.20947540" },
-    { title: "Empirical Tests, Phenomenology, Simulations, and Observervational Constraints", doi: "10.5281/zenodo.20947540" },
-    { title: "Read Order for the Four Core Papers and Cross Volume Map", doi: "10.5281/zenodo.20947540" },
-    { title: "Technical Memorandum on Mathematical Closure", doi: "10.5281/zenodo.20947540" },
-    { title: "Explanation of ʻOumuamua as an Astrophysical Anomaly", doi: "10.5281/zenodo.20947540" },
+    { title: "UN THEORY — Emergent Geometry, Dynamics, and Quantum Structure from Correlation", doi: "10.5281/zenodo.20947540" },
+    { title: "UN THEORY — Empirical Tests, Phenomenology, Simulations, and Observational Constraints", doi: "10.5281/zenodo.20947540" },
+    { title: "UN THEORY — Read Order for the Four Core Papers and Cross Volume Map", doi: "10.5281/zenodo.20947540" },
+    { title: "UN THEORY — Technical Memorandum on Mathematical Closure", doi: "10.5281/zenodo.20947540" },
+    { title: "UN THEORY — Explanation of ʻOumuamua as an Astrophysical Anomaly", doi: "10.5281/zenodo.20947540" },
 
     { title: "Sector Paper 0 — Foundational Architecture", doi: "10.5281/zenodo.21357800" },
     { title: "Sector Paper I — δI‑Substrate Microstructure", doi: "10.5281/zenodo.21335437" },
@@ -117,7 +121,7 @@ const publicDocs = [
     { title: "Sector Paper II‑B — Observational Calibration", doi: "10.5281/zenodo.21355916" },
     { title: "Sector Paper III — Universal Spectral Closure", doi: "10.5281/zenodo.21356185" },
     { title: "Sector Paper IV — Quantum δI‑Microstructure", doi: "10.5281/zenodo.21309976" },
-    { title: "Sector Paper V — Completed Bosonic Sector", doi: "10.5281/zenodo.21340400" },
+    { title: "Sector Paper V — Completed Standard Model Bosonic Sector", doi: "10.5281/zenodo.21340400" },
     { title: "Sector Paper V‑A — Detection & Measurement Framework", doi: "10.5281/zenodo.21442721" },
     { title: "Sector Paper VI — TOI‑791 Sparse‑Regime Planets", doi: "10.5281/zenodo.21310365" },
     { title: "Sector Paper VII — Uranus Sparse‑Regime Dynamics", doi: "10.5281/zenodo.21310520" },
@@ -131,15 +135,16 @@ const publicDocs = [
     { title: "Sector Paper XV — Unified Theory of Everything", doi: "10.5281/zenodo.21428951" },
 
     { title: "Machinery Paper XV — Hamiltonian Machinery", doi: "10.5281/zenodo.21476252" },
-    { title: "UN Theory — Complete Corpus Summary", doi: "10.5281/zenodo.21476252" },
-    { title: "UN Theory — Full Capability Statement", doi: "10.5281/zenodo.21476252" },
-    { title: "UN Theory — Full Release Declaration", doi: "10.5281/zenodo.21476252" },
+    { title: "UN THEORY — Complete Corpus Summary", doi: "10.5281/zenodo.21476252" },
+    { title: "UN THEORY — Full Capability Statement", doi: "10.5281/zenodo.21476252" },
+    { title: "UN THEORY — Full Release Declaration", doi: "10.5281/zenodo.21476252" },
     { title: "UN‑MACH‑XV‑SUPP‑1 — Referee‑Friendly Summary", doi: "10.5281/zenodo.21476252" },
 
     { title: "Exterior δI‑Global Manifold (Vol 1)", doi: "10.5281/zenodo.21015932" },
     { title: "Necessity of the δI‑Substrate (Vol 0)", doi: "10.5281/zenodo.20997193" }
 ];
 
+// --- RESTRICTED DOCUMENTS ---
 const restrictedDocs = [
     { title: "Formal Axioms, Canonical Equation Index, Full Equation Body", doi: "10.5281/zenodo.21193697" },
     { title: "Formal Axioms Paper — Minimal Foundation", doi: "10.5281/zenodo.21193697" },
@@ -159,7 +164,7 @@ const restrictedDocs = [
     { title: "Axiomatic Foundation & Forced‑Emergence Chain", doi: "10.5281/zenodo.21018985" }
 ];
 
-// --- POPULATE DROPDOWN WITH PADLOCK ICONS ---
+// --- POPULATE DROPDOWN ---
 const list = document.getElementById("documentList");
 
 function populateList() {
@@ -196,23 +201,25 @@ function populateList() {
 
 populateList();
 
-// --- SEARCH FUNCTION ---
-document.getElementById("searchBox").addEventListener("input", function() {
-    const query = this.value.toLowerCase();
-    const options = list.options;
+// --- When a document is selected ---
+document.getElementById("documentList").addEventListener("change", function() {
+    const opt = this.options[this.selectedIndex];
+    const doi = opt.dataset.doi;
 
-    for (let opt of options) {
-        if (opt.classList.contains("option-label")) continue;
-        opt.style.display = opt.textContent.toLowerCase().includes(query) ? "" : "none";
-    }
+    // Put DOI link in search box
+    document.getElementById("searchBox").value = "https://doi.org/" + doi;
+
+    // Update Zenodo button link
+    document.getElementById("openZenodo").href = "https://doi.org/" + doi;
 });
 
-// --- BUTTONS ---
+// --- Copy DOI ---
 document.getElementById("copyDOI").onclick = () => {
     const opt = list.options[list.selectedIndex];
     navigator.clipboard.writeText(opt.dataset.doi);
 };
 
+// --- Copy Citation ---
 document.getElementById("copyCitation").onclick = () => {
     const opt = list.options[list.selectedIndex];
     const citation = `${opt.textContent.replace("🔓 ","").replace("🔒 ","")}, DOI: ${opt.dataset.doi}`;
