@@ -73,3 +73,21 @@ main {
         gap: 14px;
     }
 }
+
+/* FIXED NAVIGATION FOR YOUR SITE */
+nav {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
