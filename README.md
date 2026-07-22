@@ -1,7 +1,5 @@
 <body style="background-color:#f2f2f2;">
 
-<img src="assets/banner.png" alt="CJ Consultancy Services Ltd Banner" width="100%">
-
 <h1>CJ Consultancy Services Ltd</h1>
 <h3>Professional Mechanical & Electrical Compliance • Technical Inspection • Engineering Advisory Services • Asset Verification & Condition Reporting</h3>
 
