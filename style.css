@@ -6,19 +6,19 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-/* LOGO BAND */
-.logo-band {
-    background: #1a1a1a;      /* dark grey fill */
-    border: 4px solid #111;   /* near-black border */
-    padding: 20px 0;          /* spacing around logo */
+/* LOGO BAND – HARD OVERRIDE */
+body .logo-band {
+    background: #1a1a1a !important;   /* dark grey fill */
+    border: 4px solid #111 !important; /* near-black border */
+    padding: 20px 0 !important;
 }
 
-/* LOGO IMAGE */
-.logo-band img {
-    width: auto;
-    height: 180px;
-    display: block;
-    margin: 0 auto;
+/* LOGO IMAGE – HARD OVERRIDE */
+body .logo-band img {
+    max-height: 180px !important;
+    width: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
 }
 
 /* NAVIGATION BAR */
