@@ -6,24 +6,24 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-
-.site-header {
+/* LIGHT GREY LOGO BAND */
+.logo-band {
     width: 100%;
-    background: #000;   
+    background: #e6e6e6;     /* lighter grey */
     text-align: center;
-    padding: 0;
+    padding: 20px 0;
 }
 
-.logo img {
+.logo-band img {
     height: 80px;
     display: block;
-    margin: 0 auto;          
+    margin: 0 auto;
 }
 
-
+/* COLOURED NAV BAR */
 .main-nav {
     width: 100%;
-    background: rgba(0, 0, 0, 0.7); 
+    background: rgba(0, 0, 0, 0.7);
     text-align: center;
     padding: 10px 0;
 }
@@ -52,22 +52,19 @@ html, body {
     text-decoration: underline;
 }
 
-
+/* CONTENT */
 main, h1, h2, h3, p, ul {
     max-width: 900px;
     margin: 20px auto;
     padding: 0 20px;
 }
 
-ul {
-    padding-left: 20px;
+/* SERVICE LIST SPACING */
+.services-list li {
+    margin-bottom: 12px;
 }
 
-ul li {
-    margin-bottom: 10px;   
-}
-
-
+/* FOOTER */
 .site-footer {
     text-align: center;
     padding: 20px;
@@ -75,7 +72,7 @@ ul li {
     color: #fff;
 }
 
-
+/* MOBILE */
 @media (max-width: 768px) {
     .main-nav ul {
         flex-direction: column;
