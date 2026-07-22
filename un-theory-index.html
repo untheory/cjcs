@@ -47,12 +47,24 @@
             style="width:100%; padding:10px; font-size:16px;">
     </select>
 
-    <div style="margin-top:20px;">
+    <div style="margin-top:20px; display:flex; gap:10px;">
         <a id="openDocument" href="#" target="_blank"
-           style="display:inline-block; background:#333; color:#fff; padding:10px 20px;
+           style="background:#333; color:#fff; padding:10px 20px;
                   text-decoration:none; border-radius:6px; font-weight:bold;">
             Open Selected Document
         </a>
+
+        <button id="copyDOI"
+                style="background:#555; color:#fff; padding:10px 20px;
+                       border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
+            Copy DOI
+        </button>
+
+        <button id="copyCitation"
+                style="background:#777; color:#fff; padding:10px 20px;
+                       border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
+            Copy Full Citation
+        </button>
     </div>
 
     <h2 style="margin-top:40px;">Publicly Published Documents</h2>
@@ -121,9 +133,19 @@
     <p>© 2026 CJ Consultancy Services Ltd — All Rights Reserved</p>
 </footer>
 
+<style>
+.option-public { color: #0a0; }
+.option-restricted { color: #a00; }
+.option-label {
+    font-weight: bold;
+    background: #ddd;
+    color: #000;
+}
+</style>
+
 <script>
 // --- UN THEORY CORPUS (PUBLIC + RESTRICTED) ---
-const documents = [
+const publicDocs = [
     { title: "Emergent Geometry, Dynamics, and Quantum Structure from Correlation", doi: "10.5281/zenodo.20947540" },
     { title: "Empirical Tests, Phenomenology, Simulations, and Observational Constraints", doi: "10.5281/zenodo.20947540" },
     { title: "Read Order for the Four Core Papers and Cross Volume Map", doi: "10.5281/zenodo.20947540" },
@@ -153,39 +175,23 @@ const documents = [
     { title: "UN Theory — Complete Corpus Summary", doi: "10.5281/zenodo.21476252" },
     { title: "UN Theory — Full Capability Statement", doi: "10.5281/zenodo.21476252" },
     { title: "UN Theory — Full Release Declaration", doi: "10.5281/zenodo.21476252" },
-    { title: "UN‑MACH‑XV‑SUPP‑1 — Referee‑Friendly Summary", doi: "10.5281/zenodo.21476252" },
-
-    // Restricted items
-    { title: "Formal Axioms, Canonical Equation Index, Full Equation Body (Restricted)", doi: "10.5281/zenodo.21193697" },
-    { title: "Formal Axioms Paper — Minimal Foundation (Restricted)", doi: "10.5281/zenodo.21193697" },
-    { title: "Full Unique Equation Index (Restricted)", doi: "10.5281/zenodo.21193697" },
-    { title: "Full Equation Index (Restricted)", doi: "10.5281/zenodo.21193697" },
-    { title: "Read Order — Restricted Draft", doi: "10.5281/zenodo.21159437" },
-    { title: "Formalisation & Correspondence Layer — Restricted", doi: "10.5281/zenodo.21159163" },
-    { title: "Adidas Trainers Saga — Restricted", doi: "10.5281/zenodo.21158747" },
-    { title: "Information Thermodynamics of the Universe (Vol 4) — Restricted", doi: "10.5281/zenodo.21070888" },
-    { title: "Global Parity‑Odd δI Architecture — Restricted", doi: "10.5281/zenodo.21158519" },
-    { title: "Formal Substrate & Physical Correspondence — Restricted", doi: "10.5281/zenodo.21071670" },
-    { title: "Meta‑Substrate & Terminal State (Vol 7) — Restricted", doi: "10.5281/zenodo.21071513" },
-    { title: "Emergent‑World Architecture (Vol 6) — Restricted", doi: "10.5281/zenodo.21071314" },
-    { title: "Operational δI Architecture (Vol 5) — Restricted", doi: "10.5281/zenodo.21071062" },
-    { title: "Exterior δI‑Global Manifold (Vol 3) — Restricted", doi: "10.5281/zenodo.21070610" },
-    { title: "Cosmological Dynamics (Vol 2) — Restricted", doi: "10.5281/zenodo.21070027" },
-    { title: "Axiomatic Foundation & Forced‑Emergence Chain — Restricted", doi: "10.5281/zenodo.21018985" },
-    { title: "Exterior δI‑Global Manifold (Vol 1) — Restricted", doi: "10.5281/zenodo.21015932" },
-    { title: "Necessity of the δI‑Substrate (Vol 0) — Restricted", doi: "10.5281/zenodo.20997193" }
+    { title: "UN‑MACH‑XV‑SUPP‑1 — Referee‑Friendly Summary", doi: "10.5281/zenodo.21476252" }
 ];
 
-// Populate dropdown
-const list = document.getElementById("documentList");
-documents.forEach(doc => {
-    const option = document.createElement("option");
-    option.value = doc.doi;
-    option.textContent = doc.title;
-    list.appendChild(option);
-});
-
-// Search filter
-document.getElementById("searchBox").addEventListener("input", function () {
-    const query = this.value.toLowerCase();
-    list.innerHTML = "";
+const restrictedDocs = [
+    { title: "Formal Axioms, Canonical Equation Index, Full Equation Body", doi: "10.5281/zenodo.21193697" },
+    { title: "Formal Axioms Paper — Minimal Foundation", doi: "10.5281/zenodo.21193697" },
+    { title: "Full Unique Equation Index", doi: "10.5281/zenodo.21193697" },
+    { title: "Full Equation Index", doi: "10.5281/zenodo.21193697" },
+    { title: "Read Order — Restricted Draft", doi: "10.5281/zenodo.21159437" },
+    { title: "Formalisation & Correspondence Layer", doi: "10.5281/zenodo.21159163" },
+    { title: "Adidas Trainers Saga", doi: "10.5281/zenodo.21158747" },
+    { title: "Information Thermodynamics of the Universe (Vol 4)", doi: "10.5281/zenodo.21070888" },
+    { title: "Global Parity‑Odd δI Architecture", doi: "10.5281/zenodo.21158519" },
+    { title: "Formal Substrate & Physical Correspondence", doi: "10.5281/zenodo.21071670" },
+    { title: "Meta‑Substrate & Terminal State (Vol 7)", doi: "10.5281/zenodo.21071513" },
+    { title: "Emergent‑World Architecture (Vol 6)", doi: "10.5281/zenodo.21071314" },
+    { title: "Operational δI Architecture (Vol 5)", doi: "10.5281/zenodo.21071062" },
+    { title: "Exterior δI‑Global Manifold (Vol 3)", doi: "10.5281/zenodo.21070610" },
+    { title: "Cosmological Dynamics (Vol 2)", doi: "10.5281/zenodo.21070027" },
+    { title: "Axiomatic Foundation & Forced‑Emergence Chain
