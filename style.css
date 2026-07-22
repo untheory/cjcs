@@ -6,11 +6,16 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
+/* LOGO */
 .logo-band img {
     width: auto;
     height: 180px;
     display: block;
     margin: 0 auto;
+}
+
+.logo-band {
+    border: 5px solid red; /* TEMPORARY TEST */
 }
 
 /* NAVIGATION BAR */
