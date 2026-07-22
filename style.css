@@ -9,33 +9,46 @@ html, body {
 /* HEADER / LOGO BANNER */
 .site-header {
     width: 100%;
+    background: #000;        /* solid black – no white band */
     text-align: center;
-    background: #000; /* solid black – removes white band */
-    padding: 10px 0;  /* small, controlled spacing */
+    padding: 0;
 }
 
 .logo img {
     height: 80px;
     display: block;
-    margin: 0 auto; /* no top margin – logo flush to banner */
+    margin: 0 auto;          /* no top margin – logo flush */
 }
 
-/* NAVIGATION */
-nav {
+/* COLOURED NAVIGATION BAR */
+.main-nav {
     width: 100%;
+    background: rgba(0, 0, 0, 0.7);   /* your original coloured banner */
     text-align: center;
-    background: #f2f2f2;
     padding: 10px 0;
 }
 
-nav a {
-    color: #000;
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav a {
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     padding: 8px 12px;
 }
 
-nav a:hover {
+.main-nav a:hover {
     text-decoration: underline;
 }
 
@@ -51,7 +64,7 @@ ul {
 }
 
 ul li {
-    margin-bottom: 10px; /* spacing between service lines */
+    margin-bottom: 10px;     /* spacing between service lines */
 }
 
 /* FOOTER */
@@ -64,9 +77,9 @@ ul li {
 
 /* MOBILE */
 @media (max-width: 768px) {
-    nav a {
-        display: block;
-        padding: 10px 0;
+    .main-nav ul {
+        flex-direction: column;
+        gap: 14px;
     }
 
     ul {
