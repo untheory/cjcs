@@ -14,10 +14,6 @@ html, body {
     margin: 0 auto;
 }
 
-.logo-band {
-    border: 5px solid red; /* TEMPORARY TEST */
-}
-
 /* NAVIGATION BAR */
 .main-nav {
     width: 100%;
