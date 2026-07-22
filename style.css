@@ -6,11 +6,11 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-/* FULL PAGE LOGO BANNER */
 .logo-band img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 180px;
     display: block;
+    margin: 0 auto;
 }
 
 /* NAVIGATION BAR */
