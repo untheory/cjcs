@@ -6,9 +6,13 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-@media (max-width: 80px) {
-    .logo-band img {
-        height: 140px;
+.logo-band img {
+    width: auto;
+    height: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
 
 }
 
