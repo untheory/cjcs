@@ -55,13 +55,21 @@ an independent theoretical physics framework authored by Clint Jefferys.
 
 <ul>
     <li><strong>δI‑Substrate Microstructure</strong><br>The primitive correlation‑structure of reality from which all physical behaviour emerges.</li>
+    
     <li><strong>Emergent Geometry</strong><br>Spacetime curvature and geodesics arise directly from δI gradients.</li>
+    
     <li><strong>Parity‑Odd Trispectrum</strong><br>A universal invariant appearing across cosmology, lensing, shear, and correlation statistics.</li>
+    
     <li><strong>Quantum Behaviour</strong><br>Quantum mechanics emerges from canonical δI evolution and correlation structure.</li>
+    
     <li><strong>Cosmological Dynamics</strong><br>Expansion history, vacuum closure, and early‑epoch AGN/quasar formation.</li>
+    
     <li><strong>Planetary‑Scale δI Compression</strong><br>Seismic behaviour, mantle structure, and sparse‑regime planetary dynamics.</li>
+    
     <li><strong>Ultra‑Global Fixed Point</strong><br>The asymptotic correlation geometry governing late‑epoch behaviour.</li>
+    
     <li><strong>Terminal State Architecture</strong><br>The final collapse of all emergence back to the primitive correlation object.</li>
+    
     <li><strong>Full Structural Unification</strong><br>Derivation of GR, QFT, Standard Model, tensor sectors, cosmology, and quantum behaviour from a single substrate.</li>
 </ul>
 
