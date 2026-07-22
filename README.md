@@ -1,3 +1,5 @@
+<body style="background-color:#f2f2f2;">
+
 <img src="assets/banner.png" alt="CJ Consultancy Services Ltd Banner" width="100%">
 
 # CJ Consultancy Services Ltd
@@ -57,33 +59,32 @@ Home • Services • About • Contact • UN Theory Overview • UN Theory Ful
 This repository also hosts the public index and overview for **UN Theory**, an independent theoretical physics framework authored by Clint Jefferys.
 
 ## UN Theory covers:
-• δI‑Substrate Microstructure
+• δI‑Substrate Microstructure  
 The primitive correlation‑structure of reality from which all physical behaviour emerges.
 
-• Emergent Geometry
+• Emergent Geometry  
 Spacetime curvature and geodesics arise directly from δI gradients.
 
-• Parity‑Odd Trispectrum
+• Parity‑Odd Trispectrum  
 A universal invariant appearing across cosmology, lensing, shear, and correlation statistics.
 
-• Quantum Behaviour
+• Quantum Behaviour  
 Quantum mechanics emerges from canonical δI evolution and correlation structure.
 
-• Cosmological Dynamics
+• Cosmological Dynamics  
 Expansion history, vacuum closure, and early‑epoch AGN/quasar formation.
 
-• Planetary‑Scale δI Compression
+• Planetary‑Scale δI Compression  
 Seismic behaviour, mantle structure, and sparse‑regime planetary dynamics.
 
-• Ultra‑Global Fixed Point
+• Ultra‑Global Fixed Point  
 The asymptotic correlation geometry governing late‑epoch behaviour.
 
-• Terminal State Architecture
+• Terminal State Architecture  
 The final collapse of all emergence back to the primitive correlation object.
 
-• Full Structural Unification
+• Full Structural Unification  
 Derivation of GR, QFT, Standard Model, tensor sectors, cosmology, and quantum behaviour from a single substrate.
-
 
 ## UN Theory Pages
 UN Theory Overview  
@@ -111,3 +112,5 @@ Email: **info@cjcs.co.uk**
 ## Copyright
 © 2026 CJ Consultancy Services Ltd  
 © 2026 UN Theory — The Unified Information Substrate
+
+</body>
