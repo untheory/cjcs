@@ -2,8 +2,66 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services — CJ Consultancy Services Ltd</title>
+<meta name="description" content="Comprehensive mechanical and electrical engineering compliance, asset condition reporting, life cycle costing, and technical advisory services across commercial and industrial environments.">
+<link rel="canonical" href="https://cjcs.co.uk/services">
 <link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Mechanical and Electrical Engineering Services",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "CJ Consultancy Services Ltd",
+    "url": "https://cjcs.co.uk"
+  },
+  "areaServed": "GB",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "M&E Compliance and Technical Advisory Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Asset Condition Reporting"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Asset Verification"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Mechanical and Electrical Compliance"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Life Cycle Analysis & Costing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Business & Condition Based Maintenance Reporting"
+        }
+      }
+    ]
+  }
+}
+</script>
 </head>
 
 <body>
@@ -14,12 +72,12 @@
 
 <nav class="main-nav">
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="services.html" class="active">Services</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="un-theory.html">UN Theory</a></li>
-<li><a href="un-theory-index.html">UN Theory Index</a></li>
+<li><a href="/">Home</a></li>
+<li><a href="/services" class="active">Services</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/un-theory">UN Theory</a></li>
+<li><a href="/un-theory-index">UN Theory Index</a></li>
 </ul>
 </nav>
 
@@ -80,7 +138,7 @@ Independent auditing of mechanical and electrical systems, maintenance regimes, 
 <p><strong>Technical Services</strong><br>
 Specialist engineering support, consultancy, and problem‑solving across complex mechanical and electrical environments.</p>
 
-<p>For detailed enquiries, project support, or technical consultation, please contact us using the link in the navigation bar.</p>
+<p>For detailed enquiries, project support, or technical consultation, please <a href="/contact">contact us</a>.</p>
 </main>
 
 <footer class="site-footer">
@@ -91,19 +149,15 @@ Specialist engineering support, consultancy, and problem‑solving across comple
 <script>
   let touchStartX = 0, touchEndX = 0;
   const minSwipeDistance = 75;
-  const prevPage = "index.html";
-  const nextPage = "about.html";
+  const prevPage = "/";
+  const nextPage = "/about";
 
   document.addEventListener('touchstart', e => { 
     touchStartX = e.changedTouches[0].screenX; 
   }, { passive: true });
 
   document.addEventListener('touchend', e => {
-    // Disable swipe redirect when zoomed in to allow free single-finger panning
-    if (window.visualViewport && window.visualViewport.scale > 1.05) {
-      return;
-    }
-
+    if (window.visualViewport && window.visualViewport.scale > 1.05) return;
     touchEndX = e.changedTouches[0].screenX;
     const dist = touchEndX - touchStartX;
 
