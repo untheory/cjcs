@@ -6,7 +6,7 @@
 <title>CJ Consultancy Services Ltd — Mechanical &amp; Electrical Compliance</title>
 <meta name="description" content="Specialist mechanical and electrical compliance, lifecycle analysis, asset condition reporting, and technical inspection services across commercial and industrial environments.">
 <link rel="canonical" href="https://cjcs.co.uk/">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="cjcs.css">
 
 <script type="application/ld+json">
 {
@@ -83,6 +83,31 @@
 <footer class="site-footer">
 © 2026 CJ Consultancy Services Ltd — All Rights Reserved
 </footer>
+
+<!-- MOBILE TOUCH SWIPE NAVIGATION (ZOOM-AWARE) -->
+<script>
+  let touchStartX = 0, touchEndX = 0;
+  const minSwipeDistance = 75;
+  const prevPage = null; // First page in navigation chain
+  const nextPage = "/services";
+
+  document.addEventListener('touchstart', e => { 
+    touchStartX = e.changedTouches[0].screenX; 
+  }, { passive: true });
+
+  document.addEventListener('touchend', e => {
+    // Disable swipe redirect when zoomed in to allow free single-finger panning
+    if (window.visualViewport && window.visualViewport.scale > 1.05) {
+      return;
+    }
+
+    touchEndX = e.changedTouches[0].screenX;
+    const dist = touchEndX - touchStartX;
+
+    if (dist < -minSwipeDistance && nextPage) window.location.href = nextPage;
+    if (dist > minSwipeDistance && prevPage) window.location.href = prevPage;
+  }, { passive: true });
+</script>
 
 </body>
 </html>
