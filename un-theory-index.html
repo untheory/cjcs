@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UN Theory Index — The Unified Information Substrate</title>
-<meta name="description" content="Public interactive corpus index for UN Theory research documents, sector papers, and mathematical closure publications authored by Clint Jefferys.">
-<link rel="canonical" href="https://cjcs.co.uk/un-theory-index">
-<link rel="stylesheet" href="cjcs.css">
+<link rel="stylesheet" href="style.css">
 
 <style>
-    .search-box, .dropdown-box {
+    .search-box,
+    .dropdown-box {
         width: 100%;
         padding: 10px;
         font-size: 16px;
@@ -22,7 +20,8 @@
         gap: 10px;
         flex-wrap: wrap;
     }
-    .button-row a, .button-row button {
+    .button-row a,
+    .button-row button {
         background: #333;
         color: #fff;
         padding: 10px 20px;
@@ -31,7 +30,6 @@
         border-radius: 6px;
         font-weight: bold;
         cursor: pointer;
-        display: inline-block;
     }
     #openZenodo {
         background: #0066cc;
@@ -60,16 +58,16 @@
 
 <nav class="main-nav">
 <ul>
-<li><a href="/">Home</a></li>
-<li><a href="/services">Services</a></li>
-<li><a href="/about">About</a></li>
-<li><a href="/contact">Contact</a></li>
-<li><a href="/un-theory">UN Theory</a></li>
-<li><a href="/un-theory-index" class="active">UN Theory Index</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="un-theory.html">UN Theory</a></li>
+<li><a href="un-theory-index.html" class="active">UN Theory Index</a></li>
 </ul>
 </nav>
 
-<main>
+<main style="max-width:900px; margin:40px auto; padding:20px;">
 
 <h1>UN Theory — Full Corpus Index</h1>
 
@@ -87,7 +85,9 @@
     <a id="openZenodo" href="#" target="_blank" rel="noopener">Open on Zenodo</a>
     <button id="copyDOI" type="button">Copy DOI</button>
     <button id="copyCitation" type="button">Copy Full Citation</button>
-    <a href="/un-theory">UN Theory Overview</a>
+
+    <a href="un-theory.html">UN Theory Overview</a>
+
     <a href="https://untheory.github.io/UN-Theory/" target="_blank" rel="noopener">UN Theory Website</a>
 </div>
 
@@ -96,10 +96,10 @@
 const publicDocs = [
     // --- LATEST PUBLICATIONS (JULY 2026) ---
     { title: "Paper I — Emergent Geometry, Dynamics, and Quantum Structure from Correlation (Theorem 1 Derivation)", doi: "10.5281/zenodo.21604606" },
-    { title: "Paper II — Non-Perturbative Scale Invariance and Functional Renormalization Group Fixed-Point Analysis", doi: "10.5281/zenodo.21605868" },
-    { title: "Paper III — Derivation of 3+1D Grassmannian Spinors and su(3) ⊕ su(2) ⊕ u(1) Lie Algebras", doi: "10.5281/zenodo.21606097" },
-    { title: "Paper IV — Unconditional Banach-Space Global Action Convexity and Spectral Positivity of S[I₀]", doi: "10.5281/zenodo.21606294" },
-    { title: "UN THEORY — 12-Sector Multi-Probe Empirical Validation of the Unified Information Substrate", doi: "10.5281/zenodo.21606518" },
+    { title: "Paper II — UN Theory Non-Perturbative Scale Invariance and Functional Renormalization Group Fixed-Point Analysis of α", doi: "10.5281/zenodo.21605868" },
+    { title: "Paper III — UN Theory Derivation of 3+1D Grassmannian Spinors and su(3) ⊕ su(2) ⊕ u(1) Lie Algebras", doi: "10.5281/zenodo.21606097" },
+    { title: "Paper IV — UN Theory Unconditional Banach-Space Global Action Convexity and Spectral Positivity of S[I₀]", doi: "10.5281/zenodo.21606294" },
+    { title: "UN THEORY 12-Sector Multi-Probe Empirical Validation of the Unified Information Substrate", doi: "10.5281/zenodo.21606518" },
 
     // --- CORE & SECTOR PAPERS ---
     { title: "UN THEORY — Emergent Geometry, Dynamics, and Quantum Structure from Correlation", doi: "10.5281/zenodo.20947540" },
@@ -220,7 +220,7 @@ document.getElementById("copyDOI").onclick = () => {
 document.getElementById("copyCitation").onclick = () => {
     const opt = list.options[list.selectedIndex];
     if (!opt || !opt.dataset.doi) return;
-    const citation = `${opt.textContent.replace("🔓 ","").replace("🔒 ","")}, DOI: ${opt.dataset.doi}`;
+    const citation = `Jefferys, C. (2026). ${opt.textContent.replace("🔓 ","").replace("🔒 ","")}. DOI: ${opt.dataset.doi}`;
     navigator.clipboard.writeText(citation);
 };
 </script>
@@ -228,15 +228,15 @@ document.getElementById("copyCitation").onclick = () => {
 </main>
 
 <footer class="site-footer">
-    © 2026 CJ Consultancy Services Ltd — All Rights Reserved
+© 2026 CJ Consultancy Services Ltd — All Rights Reserved
 </footer>
 
 <!-- MOBILE TOUCH SWIPE NAVIGATION (ZOOM-AWARE) -->
 <script>
   let touchStartX = 0, touchEndX = 0;
   const minSwipeDistance = 75;
-  const prevPage = "/un-theory";
-  const nextPage = null; // Last page in navigation order
+  const prevPage = "un-theory.html";
+  const nextPage = null; // End of site navigation loop
 
   document.addEventListener('touchstart', e => { 
     touchStartX = e.changedTouches[0].screenX; 
