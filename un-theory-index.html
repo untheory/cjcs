@@ -9,14 +9,27 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
-    .search-box,
+    .search-box {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border: 2px solid #000000;
+        border-radius: 6px;
+    }
+
     .dropdown-box {
         width: 100%;
         padding: 10px;
         font-size: 16px;
         margin-bottom: 20px;
         box-sizing: border-box;
+        border: 2px solid #000000; /* Sharp black border */
+        border-radius: 6px;
+        background-color: #ffffff;
     }
+
     .button-row {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -24,6 +37,7 @@
         gap: 10px;
         flex-wrap: wrap;
     }
+
     .button-row a,
     .button-row button {
         background: #333;
@@ -35,46 +49,61 @@
         font-weight: bold;
         cursor: pointer;
     }
+
     #openZenodo {
         background: #0066cc;
     }
+
     #openORCID {
         background: #a6ce39;
         color: #111 !important;
     }
+
     .option-public {
         color: #0a0;
         font-weight: bold;
     }
+
     .option-restricted {
         color: #a00;
         font-weight: bold;
     }
+
+    /* Clean divider styling without background spill */
     .option-label {
         font-weight: bold;
-        background: #ddd;
-        color: #000;
+        color: #333333;
+        background-color: #f1f5f9;
+        padding: 4px 8px;
     }
+
+    /* Corpus Access Box with Black Border */
     .index-note-box {
-        background: #f8fafc;
-        border-left: 4px solid #0066cc;
-        padding: 16px 20px;
+        background: #ffffff;
+        border: 2px solid #000000; /* Black border */
+        padding: 18px 22px;
         margin-top: 30px;
         margin-bottom: 60px; /* Clears fixed bottom footer */
-        border-radius: 0 8px 8px 0;
+        border-radius: 8px;
         font-size: 0.95rem;
         line-height: 1.6;
         color: #1e293b;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
+
     .index-note-box h3 {
         margin-top: 0;
         margin-bottom: 12px;
         font-size: 1.1rem;
         color: #0f172a;
+        border-bottom: 1px solid #e2e8f0;
+        padding-bottom: 6px;
     }
+
     .index-note-box p {
         margin-bottom: 10px;
     }
+
     .index-note-box p:last-child {
         margin-bottom: 0;
     }
