@@ -19,7 +19,7 @@
     }
     .button-row {
         margin-top: 20px;
-        margin-bottom: 60px; /* Added spacing to clear the fixed bottom footer */
+        margin-bottom: 60px; /* Spacing to clear fixed bottom footer */
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
@@ -37,6 +37,10 @@
     }
     #openZenodo {
         background: #0066cc;
+    }
+    #openORCID {
+        background: #a6ce39;
+        color: #111 !important;
     }
     .option-public {
         color: #0a0;
@@ -95,6 +99,7 @@
     <a href="/un-theory">UN Theory Overview</a>
 
     <a href="https://untheory.github.io/UN-Theory/" target="_blank" rel="noopener">UN Theory Website</a>
+    <a id="openORCID" href="https://orcid.org/0009-0004-9241-7221" target="_blank" rel="noopener">ORCID iD</a>
 </div>
 
 <script>
@@ -163,13 +168,29 @@ const restrictedDocs = [
     { title: "Axiomatic Foundation & Forced‑Emergence Chain", doi: "10.5281/zenodo.21018985" }
 ];
 
-// --- POPULATE DROPDOWN ---
 const list = document.getElementById("documentList");
+
+function getSelectedDOI() {
+    if (list.selectedIndex < 0) return null;
+    const opt = list.options[list.selectedIndex];
+    if (opt && opt.dataset && opt.dataset.doi) {
+        return opt.dataset.doi;
+    }
+    return null;
+}
+
+function updateSelection() {
+    const doi = getSelectedDOI();
+    if (!doi) return;
+    
+    const fullUrl = "https://doi.org/" + doi;
+    document.getElementById("searchBox").value = fullUrl;
+    document.getElementById("openZenodo").href = fullUrl;
+}
 
 function populateList() {
     list.innerHTML = "";
 
-    // Public label
     let optLabelPub = document.createElement("option");
     optLabelPub.textContent = "--- Public Documents ---";
     optLabelPub.className = "option-label";
@@ -184,7 +205,6 @@ function populateList() {
         list.appendChild(opt);
     });
 
-    // Restricted label
     let optLabelRes = document.createElement("option");
     optLabelRes.textContent = "--- Restricted Documents ---";
     optLabelRes.className = "option-label";
@@ -198,32 +218,42 @@ function populateList() {
         opt.className = "option-restricted";
         list.appendChild(opt);
     });
+
+    // Auto-select first document
+    list.selectedIndex = 1;
+    updateSelection();
 }
 
 populateList();
 
-// --- When a document is selected ---
-list.addEventListener("change", function() {
-    const opt = this.options[this.selectedIndex];
-    if (!opt || !opt.dataset.doi) return;
-    const doi = opt.dataset.doi;
+// Listen for both change and click events on the select box
+list.addEventListener("change", updateSelection);
+list.addEventListener("click", updateSelection);
 
-    document.getElementById("searchBox").value = "https://doi.org/" + doi;
-    document.getElementById("openZenodo").href = "https://doi.org/" + doi;
+// Direct click handler for Zenodo button to guarantee open action
+document.getElementById("openZenodo").addEventListener("click", function(e) {
+    const doi = getSelectedDOI();
+    if (doi) {
+        const fullUrl = "https://doi.org/" + doi;
+        this.href = fullUrl;
+        window.open(fullUrl, "_blank", "noopener");
+        e.preventDefault();
+    }
 });
 
-// --- Copy DOI ---
+// Copy DOI
 document.getElementById("copyDOI").onclick = () => {
-    const opt = list.options[list.selectedIndex];
-    if (!opt || !opt.dataset.doi) return;
-    navigator.clipboard.writeText(opt.dataset.doi);
+    const doi = getSelectedDOI();
+    if (doi) navigator.clipboard.writeText(doi);
 };
 
-// --- Copy Citation ---
+// Copy Citation
 document.getElementById("copyCitation").onclick = () => {
+    const doi = getSelectedDOI();
+    if (!doi) return;
     const opt = list.options[list.selectedIndex];
-    if (!opt || !opt.dataset.doi) return;
-    const citation = `Jefferys, C. (2026). ${opt.textContent.replace("🔓 ","").replace("🔒 ","")}. DOI: ${opt.dataset.doi}`;
+    const cleanTitle = opt.textContent.replace("🔓 ","").replace("🔒 ","");
+    const citation = `Jefferys, C. (2026). ${cleanTitle}. DOI: ${doi}`;
     navigator.clipboard.writeText(citation);
 };
 </script>
