@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UN Theory Index — The Unified Information Substrate</title>
+<meta name="description" content="Public interactive corpus index for UN Theory research documents, sector papers, and mathematical closure publications authored by Clint Jefferys.">
+<link rel="canonical" href="https://cjcs.co.uk/un-theory-index">
 <link rel="stylesheet" href="style.css">
 
 <style>
@@ -58,12 +61,12 @@
 
 <nav class="main-nav">
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="un-theory.html">UN Theory</a></li>
-<li><a href="un-theory-index.html" class="active">UN Theory Index</a></li>
+<li><a href="/">Home</a></li>
+<li><a href="/services">Services</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/un-theory">UN Theory</a></li>
+<li><a href="/un-theory-index" class="active">UN Theory Index</a></li>
 </ul>
 </nav>
 
@@ -86,7 +89,7 @@
     <button id="copyDOI" type="button">Copy DOI</button>
     <button id="copyCitation" type="button">Copy Full Citation</button>
 
-    <a href="un-theory.html">UN Theory Overview</a>
+    <a href="/un-theory">UN Theory Overview</a>
 
     <a href="https://untheory.github.io/UN-Theory/" target="_blank" rel="noopener">UN Theory Website</a>
 </div>
@@ -202,10 +205,7 @@ list.addEventListener("change", function() {
     if (!opt || !opt.dataset.doi) return;
     const doi = opt.dataset.doi;
 
-    // Put DOI link in search box
     document.getElementById("searchBox").value = "https://doi.org/" + doi;
-
-    // Update Zenodo button link
     document.getElementById("openZenodo").href = "https://doi.org/" + doi;
 });
 
@@ -235,7 +235,7 @@ document.getElementById("copyCitation").onclick = () => {
 <script>
   let touchStartX = 0, touchEndX = 0;
   const minSwipeDistance = 75;
-  const prevPage = "un-theory.html";
+  const prevPage = "/un-theory";
   const nextPage = null; // End of site navigation loop
 
   document.addEventListener('touchstart', e => { 
@@ -243,11 +243,7 @@ document.getElementById("copyCitation").onclick = () => {
   }, { passive: true });
 
   document.addEventListener('touchend', e => {
-    // Disable swipe redirect when zoomed in to allow free single-finger panning
-    if (window.visualViewport && window.visualViewport.scale > 1.05) {
-      return;
-    }
-
+    if (window.visualViewport && window.visualViewport.scale > 1.05) return;
     touchEndX = e.changedTouches[0].screenX;
     const dist = touchEndX - touchStartX;
 
