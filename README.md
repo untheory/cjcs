@@ -29,7 +29,7 @@ Technical Services
 
 Website
 Full website: https://cjcs.co.uk
-Includes: Home • Services • About • Contact • UN Theory Overview • UN Theory Full Index • Sitemap
+Includes: Home • Services • About • Contact • UN Theory® Overview • UN Theory® Full Index • Sitemap
 
 UN Theory® — The Unified Information Substrate
 This repository also hosts the public index and overview for UN Theory, an independent theoretical physics framework authored by Clint Jefferys.
