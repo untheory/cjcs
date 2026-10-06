@@ -31,10 +31,10 @@ Website
 Full website: https://cjcs.co.uk
 Includes: Home • Services • About • Contact • UN Theory Overview • UN Theory Full Index • Sitemap
 
-UN Theory — The Unified Information Substrate
+UN Theory® — The Unified Information Substrate
 This repository also hosts the public index and overview for UN Theory, an independent theoretical physics framework authored by Clint Jefferys.
 
-UN Theory Covers
+UN Theory® Covers
 δI‑Substrate Microstructure
 Emergent Geometry
 Parity‑Odd Trispectrum
@@ -45,13 +45,13 @@ Ultra‑Global Fixed Point
 Terminal State Architecture
 Full Structural Unification
 
-UN Theory Pages
-UN Theory Overview
-UN Theory Full Index
+UN Theory® Pages
+UN Theory® Overview
+UN Theory® Full Index
 Links to all sector papers, volumes, prediction papers, and mathematical closure documents
 
 External Research Archive
-Full UN Theory research: https://untheory.github.io/UN-Theory/
+Full UN Theory® research: https://untheory.github.io/UN-Theory/
 Zenodo Community: https://zenodo.org/communities/un-theory
 
 Contact
@@ -61,4 +61,4 @@ Email: info@cjcs.co.uk
 
 Copyright
 © 2026 CJ Consultancy Services Ltd
-© 2026 UN Theory — The Unified Information Substrate
+© 2026 UN Theory® — The Unified Information Substrate
